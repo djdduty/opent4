@@ -87,7 +87,6 @@ void TurokToOsg(opent4::Actor* actor)
         {
             osg::Vec3Array* meshVerts = new osg::Vec3Array;
             osg::Vec3Array* meshNorms = new osg::Vec3Array;
-            osg::Vec4Array* meshColors = new osg::Vec4Array;
             osg::Vec2Array* meshTexCs = new osg::Vec2Array;
             osg::DrawElementsUInt* meshIndices = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLE_STRIP, 0);
 
@@ -100,9 +99,8 @@ void TurokToOsg(opent4::Actor* actor)
                 sm->GetNormal(vIdx,&n0.x);
 
                 meshTexCs->push_back(t0);
-                meshVerts->push_back(osg::Vec3(v0.x,v0.z,v0.y));
-                meshNorms->push_back(osg::Vec3(n0.x,n0.z,n0.y));
-                meshColors->push_back(osg::Vec4(1,1,1,1));
+                meshVerts->push_back(osg::Vec3(v0.x,-v0.z,v0.y));
+                meshNorms->push_back(osg::Vec3(n0.x,-n0.z,n0.y));
             }
 
             if(sm->GetIndexCount() != 0)
@@ -120,8 +118,6 @@ void TurokToOsg(opent4::Actor* actor)
                 meshGeometry->setTexCoordArray(0, meshTexCs);
                 meshGeometry->setVertexArray(meshVerts);
                 meshGeometry->setNormalArray(meshNorms);
-                meshGeometry->setColorArray(meshColors);
-                meshGeometry->setColorBinding(osg::Geometry::BIND_PER_VERTEX);
                 meshGeometry->addPrimitiveSet(meshIndices);
                 printf("Adding geometry\n");
 
@@ -140,6 +136,10 @@ void TurokToOsg(opent4::Actor* actor)
                 if(texFileName.length() > 0)
                 {
                     osg::Texture2D* meshTexture = new osg::Texture2D;
+                    meshTexture->setWrap(osg::Texture2D::WrapParameter::WRAP_S,osg::Texture2D::WrapMode::MIRROR);
+                    meshTexture->setWrap(osg::Texture2D::WrapParameter::WRAP_T,osg::Texture2D::WrapMode::MIRROR);
+                    meshTexture->setWrap(osg::Texture2D::WrapParameter::WRAP_R,osg::Texture2D::WrapMode::MIRROR);
+
                     meshTexture->setDataVariance(osg::Object::DYNAMIC);
                     osg::Image* meshImage = osgDB::readImageFile(texFileName);
                     if(!meshImage)
@@ -149,6 +149,8 @@ void TurokToOsg(opent4::Actor* actor)
                     meshTexture->setImage(meshImage);
                     osg::StateSet* stateOne = new osg::StateSet();
                     stateOne->setTextureAttributeAndModes(0, meshTexture, osg::StateAttribute::ON);
+                    stateOne->setMode(GL_BLEND, osg::StateAttribute::ON);
+                    stateOne->setRenderingHint(osg::StateSet::TRANSPARENT_BIN);
                     meshGeode->setStateSet(stateOne);
                 }
             }
