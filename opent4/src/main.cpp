@@ -56,7 +56,7 @@ void TurokToOsg(opent4::Actor* actor)
     std::string fn = actor->GetFilename();
     opent4::ActorMesh* m = actor->GetMesh();
     if(!m) return;
-    printf("Has mesh! %d submeshes\n", m->GetSubMeshCount());
+    //printf("Has mesh! %d submeshes\n", m->GetSubMeshCount());
 
     /*int ActorIdx = -1;
     if(actor->GetDef())
@@ -119,17 +119,20 @@ void TurokToOsg(opent4::Actor* actor)
                 meshGeometry->setVertexArray(meshVerts);
                 meshGeometry->setNormalArray(meshNorms);
                 meshGeometry->addPrimitiveSet(meshIndices);
-                printf("Adding geometry\n");
+                //printf("Adding geometry\n");
 
                 //Setup obj transform
-                osg::Vec3 meshPosition;
+                osg::PositionAttitudeTransform* meshXForm = new osg::PositionAttitudeTransform();
                 if(actor->GetDef())
                 {
                     opent4::ActorVec3 pos = actor->GetDef()->Position;
-                    meshPosition += osg::Vec3(pos.x, pos.z, pos.y);
-                }
-                osg::PositionAttitudeTransform* meshXForm = new osg::PositionAttitudeTransform();
+                    meshXForm->setPosition(osg::Vec3(pos.x, -pos.z, pos.y));
 
+                    opent4::ActorVec3 scale = actor->GetDef()->Scale;
+                    meshXForm->setScale(osg::Vec3(scale.x, scale.z, scale.y));
+
+                    opent4::ActorVec3 rotation = actor->GetDef()->Rotation;
+                }
                 meshXForm->addChild(meshGeode);
                 root->addChild(meshXForm);
 
@@ -152,6 +155,52 @@ void TurokToOsg(opent4::Actor* actor)
                     stateOne->setMode(GL_BLEND, osg::StateAttribute::ON);
                     stateOne->setRenderingHint(osg::StateSet::TRANSPARENT_BIN);
                     meshGeode->setStateSet(stateOne);
+                }
+            } else if(sm->GetChunkCount() != 0) {
+                for(size_t ch = 0; ch < sm->GetChunkCount(); ch++)
+                {
+                    texFileName = "";
+                    opent4::MeshChunk* Chunk = sm->GetChunk(ch);
+
+                    if(ch < m->m_MTRLs.size())
+                    {
+                        if(m->m_MTRLs[ch].Unk4 >= 0 && m->m_MTRLs[ch].Unk4 < m->m_TSNRs.size())
+                        {
+                            int TexID = m->m_TXSTs[m->m_TSNRs[m->m_MTRLs[ch].Unk4].TXST_ID].TextureID;
+                            if(TexID < m->m_Textures.size()) texFileName = m->m_Textures[TexID];
+                        }
+                    }
+
+                    for(size_t idx = 0;idx < Chunk->GetIndexCount();idx++)
+                    {
+                        int I = Chunk->GetIndex(idx);
+                        meshIndices->push_back(I);
+                    }
+
+                    osg::Geode* meshGeode = new osg::Geode();
+                    osg::Geometry* meshGeometry = new osg::Geometry();
+                    meshGeode->addDrawable(meshGeometry);
+
+                    meshGeometry->setTexCoordArray(0, meshTexCs);
+                    meshGeometry->setVertexArray(meshVerts);
+                    meshGeometry->setNormalArray(meshNorms);
+                    meshGeometry->addPrimitiveSet(meshIndices);
+                    //printf("Adding geometry\n");
+
+                    //Setup obj transform
+                    osg::PositionAttitudeTransform* meshXForm = new osg::PositionAttitudeTransform();
+                    if(actor->GetDef())
+                    {
+                        opent4::ActorVec3 pos = actor->GetDef()->Position;
+                        meshXForm->setPosition(osg::Vec3(pos.x, -pos.z, pos.y));
+
+                        opent4::ActorVec3 scale = actor->GetDef()->Scale;
+                        meshXForm->setScale(osg::Vec3(scale.x, scale.z, scale.y));
+
+                        opent4::ActorVec3 rotation = actor->GetDef()->Rotation;
+                    }
+                    meshXForm->addChild(meshGeode);
+                    root->addChild(meshXForm);
                 }
             }
         }
