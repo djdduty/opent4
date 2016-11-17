@@ -1,0 +1,2222 @@
+Program analyzed every .atr file in the game (2033 files) and encountered 1107 block types. Once I find out how to know if a block has child blocks programmatically there
+will be more block types and more block header types.
+
+This data can be used to learn more about the .ATI/.ATR formats, and more about
+how to change the behavior of the game through these formats.
+
+1107 known block types
+[                         ACTOR][Min:       0 B Max  156349 B] Used  2033 times
+[                       VERSION][Constant:                4 B] Used  2028 times
+[                    ACTOR_CODE][Min:       0 B Max      25 B] Used  2003 times
+[               ACTOR_VARIABLES][Min:       0 B Max    8028 B] Used  2002 times
+[                          TYPE][Min:       0 B Max       4 B] Used  1982 times
+[                       GRAVITY][Constant:                4 B] Used  1982 times
+[                       TOUCHES][Min:       0 B Max       4 B] Used  1982 times
+[                      FRICTION][Constant:                4 B] Used  1982 times
+[                     MAXHEALTH][Constant:                4 B] Used  1982 times
+[                       DENSITY][Constant:                4 B] Used  1982 times
+[                         SPINY][Constant:                4 B] Used  1982 times
+[                      COLLIDES][Min:       0 B Max       4 B] Used  1982 times
+[                          MASS][Constant:                4 B] Used  1982 times
+[                        HEALTH][Constant:                4 B] Used  1982 times
+[                    ELASTICITY][Constant:                4 B] Used  1982 times
+[                      SPINMINX][Constant:                4 B] Used  1981 times
+[                       EMBARKS][Constant:                1 B] Used  1981 times
+[              BOUNCERELATIVETO][Constant:                1 B] Used  1981 times
+[                        SPINAX][Constant:                4 B] Used  1981 times
+[               BOUNCEMAXSPEEDZ][Constant:                4 B] Used  1981 times
+[              BOUNCEMAXSPEEDZ2][Constant:                4 B] Used  1981 times
+[                         AD_TD][Constant:                4 B] Used  1981 times
+[                       SPINCEZ][Constant:                4 B] Used  1981 times
+[                          HOLD][Constant:                4 B] Used  1981 times
+[                      BOUNCEZ2][Constant:                4 B] Used  1981 times
+[                        SPINIX][Constant:                4 B] Used  1981 times
+[                          INTE][Constant:                4 B] Used  1981 times
+[                       SPINFTY][Constant:                4 B] Used  1981 times
+[                        BSPEED][Constant:                4 B] Used  1981 times
+[                        SMFALL][Constant:                4 B] Used  1981 times
+[                         SPINX][Constant:                4 B] Used  1981 times
+[                         SPINZ][Constant:                4 B] Used  1981 times
+[                 PATHENDBOUNCE][Constant:                4 B] Used  1981 times
+[                     SPINMAXSX][Constant:                4 B] Used  1981 times
+[                BOUNCEADJUSTX2][Constant:                4 B] Used  1981 times
+[                       SPINSTY][Constant:                4 B] Used  1981 times
+[                        LSPEED][Constant:                4 B] Used  1981 times
+[                       SPINCEY][Constant:                4 B] Used  1981 times
+[                       IGNORES][Min:       0 B Max       4 B] Used  1981 times
+[                       SPINFTZ][Constant:                4 B] Used  1981 times
+[                        VSPEED][Constant:                4 B] Used  1981 times
+[                       SPINAXT][Constant:                1 B] Used  1981 times
+[                          SMJH][Constant:                4 B] Used  1981 times
+[                       SPINAZT][Constant:                1 B] Used  1981 times
+[                      SPINMINZ][Constant:                4 B] Used  1981 times
+[                        SPINAZ][Constant:                4 B] Used  1981 times
+[                        MAXSAG][Constant:                4 B] Used  1981 times
+[                       SAGTIME][Constant:                4 B] Used  1981 times
+[                         SAGRT][Constant:                4 B] Used  1981 times
+[                        TIPRTX][Constant:                4 B] Used  1981 times
+[                      TIPTYPEZ][Constant:                1 B] Used  1981 times
+[                      BOUNCEES][Constant:                1 B] Used  1981 times
+[             PATHRELEASE1SPEED][Constant:                4 B] Used  1981 times
+[                       SPINFTX][Constant:                4 B] Used  1981 times
+[                     SPINMAXSZ][Constant:                4 B] Used  1981 times
+[                      TIPTYPEX][Constant:                1 B] Used  1981 times
+[                      MAXTIPX1][Constant:                4 B] Used  1981 times
+[                      MAXTIPX2][Constant:                4 B] Used  1981 times
+[                        PSPEED][Constant:                4 B] Used  1981 times
+[                   BOUNCEKIND2][Constant:                1 B] Used  1981 times
+[                BOUNCEADJUSTZ2][Constant:                4 B] Used  1981 times
+[                       TIPDOMX][Constant:                6 B] Used  1981 times
+[                         SAGRD][Constant:                4 B] Used  1981 times
+[                      MAXTIPZ1][Constant:                4 B] Used  1981 times
+[                 BOUNCEADJUSTX][Constant:                4 B] Used  1981 times
+[                      TIPTIMEZ][Constant:                4 B] Used  1981 times
+[                        HSTIME][Constant:                4 B] Used  1981 times
+[                        TIPRTZ][Constant:                4 B] Used  1981 times
+[                      RECHARGE][Constant:                4 B] Used  1981 times
+[                          HIDE][Constant:                4 B] Used  1981 times
+[                       SPINAYL][Constant:                4 B] Used  1981 times
+[                        TIPRDZ][Constant:                4 B] Used  1981 times
+[                   EMBARKDELAY][Constant:                4 B] Used  1981 times
+[                     INVISIBLE][Min:       0 B Max       5 B] Used  1981 times
+[                    DISEMBARKS][Constant:                1 B] Used  1981 times
+[                      SPINMAXY][Constant:                4 B] Used  1981 times
+[                  PATHFRICTION][Constant:                4 B] Used  1981 times
+[                      PATHPUSH][Constant:                4 B] Used  1981 times
+[            PATHSLIDEWARPSBACK][Constant:                6 B] Used  1981 times
+[                  SLIDESONPATH][Constant:                6 B] Used  1981 times
+[                         AD_TY][Constant:                1 B] Used  1981 times
+[                    BOUNCEKIND][Constant:                1 B] Used  1981 times
+[                      TIPTIMEX][Constant:                4 B] Used  1981 times
+[                 BOUNCEADJUSTZ][Constant:                4 B] Used  1981 times
+[                      MAXTIPZ2][Constant:                4 B] Used  1981 times
+[                       BOUNCEZ][Constant:                4 B] Used  1981 times
+[                    TIPTORQUEX][Constant:                4 B] Used  1981 times
+[                        SPINIY][Constant:                4 B] Used  1981 times
+[                 BOUNCEADJUSTY][Constant:                4 B] Used  1981 times
+[                BOUNCEMAXSPEED][Constant:                4 B] Used  1981 times
+[                DISEMBARKDELAY][Constant:                4 B] Used  1981 times
+[                BOUNCEADJUSTY2][Constant:                4 B] Used  1981 times
+[                      BOUNCEX2][Constant:                4 B] Used  1981 times
+[              BOUNCEMAXSPEEDX2][Constant:                4 B] Used  1981 times
+[              BOUNCEMAXSPEEDY2][Constant:                4 B] Used  1981 times
+[                     MINDAMAGE][Constant:                4 B] Used  1981 times
+[               BOUNCEMAXSPEEDY][Constant:                4 B] Used  1981 times
+[               BOUNCEMAXSPEEDX][Constant:                4 B] Used  1981 times
+[                          SMJD][Constant:                4 B] Used  1981 times
+[                       BOUNCEY][Constant:                4 B] Used  1981 times
+[                       SPINSTX][Constant:                4 B] Used  1981 times
+[                      BOUNCEY2][Constant:                4 B] Used  1981 times
+[                       SAGTYPE][Constant:                1 B] Used  1981 times
+[                        FSPEED][Constant:                4 B] Used  1981 times
+[                      SPINMINY][Constant:                4 B] Used  1981 times
+[                      SPINMAXZ][Constant:                4 B] Used  1981 times
+[                         AD_RT][Constant:                4 B] Used  1981 times
+[                        SMSTEP][Constant:                4 B] Used  1981 times
+[                        RSPEED][Constant:                4 B] Used  1981 times
+[                       SAGMASS][Constant:                4 B] Used  1981 times
+[                         AD_TI][Constant:                6 B] Used  1981 times
+[                      COUNTERS][Constant:                1 B] Used  1981 times
+[                     SPINMAXSY][Constant:                4 B] Used  1981 times
+[                      SPINMAXX][Constant:                4 B] Used  1981 times
+[               BOUNCEMAXSPEED2][Constant:                4 B] Used  1981 times
+[                        SAGDOM][Constant:                6 B] Used  1981 times
+[                       TIPDOMZ][Constant:                6 B] Used  1981 times
+[                        SPINIZ][Constant:                4 B] Used  1981 times
+[                        TIPRDX][Constant:                4 B] Used  1981 times
+[                       SPINSTZ][Constant:                4 B] Used  1981 times
+[                       SPINCEX][Constant:                4 B] Used  1981 times
+[                     FREEPATHY][Constant:                6 B] Used  1981 times
+[                        SMTYPE][Constant:                1 B] Used  1981 times
+[                        SPINAY][Constant:                4 B] Used  1981 times
+[                        TSPEED][Constant:                4 B] Used  1981 times
+[             PATHRELEASE2SPEED][Constant:                4 B] Used  1981 times
+[                        TURNON][Min:       0 B Max       6 B] Used  1981 times
+[                       BOUNCEX][Constant:                4 B] Used  1981 times
+[                    TIPTORQUEZ][Constant:                4 B] Used  1981 times
+[             BOUNCERELATIVETO2][Constant:                1 B] Used  1981 times
+[                       OVERSAG][Constant:                4 B] Used  1981 times
+[                        RELROT][Min:       0 B Max       5 B] Used  1981 times
+[                         FLEXF][Constant:                4 B] Used  1981 times
+[                         A_MDD][Constant:                4 B] Used  1980 times
+[                         A_NDD][Constant:                4 B] Used  1980 times
+[                         AD_DK][Constant:                1 B] Used  1980 times
+[                         AD_ED][Constant:                4 B] Used  1980 times
+[                         A_TDK][Min:       0 B Max       2 B] Used  1980 times
+[                         DRAGE][Constant:                4 B] Used  1980 times
+[                         A_ALP][Constant:                4 B] Used  1979 times
+[                         A_HIF][Constant:                1 B] Used  1979 times
+[                         A_RNF][Constant:                1 B] Used  1979 times
+[                          A_KS][Constant:                1 B] Used  1979 times
+[                          A_MT][Min:       0 B Max       4 B] Used  1979 times
+[                         AP_DC][Constant:                1 B] Used  1979 times
+[                        A_FENM][Constant:                4 B] Used  1979 times
+[                         A_SON][Min:       0 B Max       4 B] Used  1979 times
+[                         A_KSF][Constant:                1 B] Used  1979 times
+[                        A_SOFF][Min:       0 B Max       2 B] Used  1979 times
+[                       SPINAXL][Constant:                4 B] Used  1979 times
+[                       SPINAZL][Constant:                4 B] Used  1979 times
+[                         A_KSK][Constant:                1 B] Used  1979 times
+[                       SAGMINS][Constant:                4 B] Used  1979 times
+[                          AU_F][Constant:                1 B] Used  1979 times
+[                         AP_EC][Constant:                1 B] Used  1979 times
+[                         A_HII][Constant:                1 B] Used  1979 times
+[                        A_FEXS][Constant:                4 B] Used  1979 times
+[                          AU_D][Constant:                4 B] Used  1979 times
+[                      BOUNCENP][Constant:                4 B] Used  1979 times
+[                       SPINAZF][Constant:                4 B] Used  1979 times
+[                      BOUNCENK][Constant:                1 B] Used  1979 times
+[                          A_FL][Constant:                1 B] Used  1979 times
+[                     RIGIDBODY][Constant:                6 B] Used  1978 times
+[                        SMWALL][Constant:                4 B] Used  1978 times
+[                          DTYP][Constant:                1 B] Used  1978 times
+[                          DSTA][Min:       0 B Max       5 B] Used  1978 times
+[                          DCOL][Min:       0 B Max       6 B] Used  1978 times
+[                          DLIF][Constant:                4 B] Used  1978 times
+[                          DPOW][Constant:                4 B] Used  1978 times
+[                          DSIZ][Constant:                4 B] Used  1977 times
+[                          DNUM][Constant:                1 B] Used  1977 times
+[                          DDIS][Constant:                4 B] Used  1977 times
+[                          A_GN][Constant:                1 B] Used  1963 times
+[                          DEFT][Constant:               33 B] Used  1959 times
+[                         A_SHS][Constant:                4 B] Used  1953 times
+[                         A_SHW][Constant:                4 B] Used  1953 times
+[                         A_SHH][Constant:                4 B] Used  1953 times
+[                         A_SHL][Constant:                4 B] Used  1953 times
+[               ACTOR_MESH_AXIS][Constant:               12 B] Used  1934 times
+[                    ACTOR_MESH][Min:       0 B Max     145 B] Used  1934 times
+[             ACTOR_MESH_BOUNDS][Constant:               36 B] Used  1904 times
+[                          AU_A][Constant:                4 B] Used  1860 times
+[                       DUMMIES][Min:       0 B Max       6 B] Used  1802 times
+[            SHALLOWWATERHEIGHT][Constant:                4 B] Used   646 times
+[                   TUROKAITYPE][Constant:                1 B] Used   646 times
+[               VISIONEYEHEIGHT][Constant:                4 B] Used   646 times
+[                   AIMATHEIGHT][Constant:                4 B] Used   645 times
+[                ACCESSORYNAME2][Min:       0 B Max      60 B] Used   645 times
+[                      PSMACCEL][Constant:                4 B] Used   645 times
+[                      AIRADIUS][Constant:                4 B] Used   645 times
+[                      MPSONOFF][Constant:                6 B] Used   645 times
+[                        MPSNEA][Constant:                4 B] Used   645 times
+[                        MPSSCA][Constant:                4 B] Used   645 times
+[               ACCESSORYPOINT1][Min:       0 B Max      12 B] Used   645 times
+[                ACCESSORYNAME1][Min:       0 B Max      68 B] Used   645 times
+[               ACCESSORYPOINT3][Constant:                1 B] Used   645 times
+[                      PSMDECEL][Constant:                4 B] Used   645 times
+[                ACCESSORYNAME3][Constant:                1 B] Used   645 times
+[                        PSMPOS][Constant:                4 B] Used   645 times
+[                    POINTVALUE][Constant:                4 B] Used   645 times
+[                        MPSFAR][Constant:                4 B] Used   645 times
+[                         LTARG][Min:       0 B Max       6 B] Used   645 times
+[                        MPSMID][Constant:                4 B] Used   645 times
+[                      PSMONOFF][Min:       0 B Max       5 B] Used   645 times
+[               ACCESSORYPOINT2][Min:       0 B Max      12 B] Used   645 times
+[                        FDMULT][Constant:                4 B] Used   641 times
+[                     IGNORENAV][Min:       0 B Max       5 B] Used   637 times
+[                          COLS][Min:       0 B Max    2508 B] Used   554 times
+[             ACTOR_TEXTURE_SET][Min:       0 B Max    2000 B] Used   533 times
+[                         HOTPS][Min:       0 B Max     939 B] Used   453 times
+[                         LINKS][Min:       0 B Max    7985 B] Used   444 times
+[              ACTOR_PROPERTIES][Min:       0 B Max     214 B] Used   419 times
+[                         MODES][Min:       0 B Max   20799 B] Used   375 times
+[                    LINK_LISTS][Min:       0 B Max  121253 B] Used   323 times
+[                        GRND_Y][Constant:                4 B] Used   313 times
+[                    CONEVISION][Min:       0 B Max       5 B] Used   275 times
+[                   SIGHTRADIUS][Constant:                4 B] Used   275 times
+[                  IGNOREPLAYER][Min:       0 B Max       5 B] Used   275 times
+[                       LEASHED][Min:       0 B Max       6 B] Used   274 times
+[          LOSTCONTACTRESETTIME][Constant:                4 B] Used   274 times
+[                   LEASHRADIUS][Constant:                4 B] Used   274 times
+[                   SOUNDRADIUS][Constant:                4 B] Used   274 times
+[               LONGRANGECHANCE][Constant:                1 B] Used   274 times
+[             MEDIUMRANGECHANCE][Constant:                1 B] Used   274 times
+[                  TURNINGSPEED][Constant:                4 B] Used   274 times
+[                 MOVEMENTSPEED][Constant:                4 B] Used   274 times
+[                CLOSERANGEDIST][Constant:                4 B] Used   274 times
+[              CLOSERANGECHANCE][Constant:                1 B] Used   274 times
+[               MEDIUMRANGEDIST][Constant:                4 B] Used   274 times
+[            CROUCHATTACKCHANCE][Constant:                1 B] Used   274 times
+[                 LONGRANGEDIST][Constant:                4 B] Used   274 times
+[                   NEARTIPZFIX][Constant:                4 B] Used   273 times
+[                  HEADPITCHMIN][Constant:                4 B] Used   273 times
+[               NEARTIPPITCHMIN][Constant:                4 B] Used   273 times
+[                  CRITKAMIKAZE][Constant:                1 B] Used   273 times
+[                 BACKPITCHAXIS][Constant:                1 B] Used   273 times
+[              NEARTIPPITCHAXIS][Constant:                1 B] Used   273 times
+[                  WEAPONRANGE5][Constant:                4 B] Used   273 times
+[                    PITCHSPEED][Constant:                4 B] Used   273 times
+[                 MAXCOVERSHOTS][Constant:                1 B] Used   273 times
+[                  WEAPONPOINT5][Min:       0 B Max       8 B] Used   273 times
+[                  TIPPITCHCORR][Constant:                4 B] Used   273 times
+[                   WEAPONNAME3][Min:       0 B Max      66 B] Used   273 times
+[               NEARBASEYAWAXIS][Constant:                1 B] Used   273 times
+[                  WEAPONRANGE3][Constant:                4 B] Used   273 times
+[                       CANSWIM][Min:       0 B Max       5 B] Used   273 times
+[                    BACKYAWMAX][Constant:                4 B] Used   273 times
+[                   USEPRIMARY4][Min:       0 B Max       5 B] Used   273 times
+[       DAMAGELOGICCHANGEAMOUNT][Constant:                4 B] Used   273 times
+[                   COVERRADIUS][Constant:                4 B] Used   273 times
+[                   NEARTIPXFIX][Constant:                4 B] Used   273 times
+[                     TIPYAWMAX][Constant:                4 B] Used   273 times
+[                   TIPPITCHMAX][Constant:                4 B] Used   273 times
+[                 HEADPITCHAXIS][Constant:                1 B] Used   273 times
+[                       TIPZFIX][Constant:                4 B] Used   273 times
+[              NEARTIPBONEINDEX][Constant:                1 B] Used   273 times
+[                  INITIALSTATE][Min:       0 B Max      10 B] Used   273 times
+[              NEARBASEPITCHMIN][Constant:                4 B] Used   273 times
+[                   NEARTIPYFIX][Constant:                4 B] Used   273 times
+[             PRONEATTACKCHANCE][Constant:                1 B] Used   273 times
+[                    BACKYAWMIN][Constant:                4 B] Used   273 times
+[              NEARBASEPITCHMAX][Constant:                4 B] Used   273 times
+[             FASTSWIMMINGSPEED][Constant:                4 B] Used   273 times
+[                 HEADPITCHCORR][Constant:                4 B] Used   273 times
+[                  BASEPITCHMAX][Constant:                4 B] Used   273 times
+[                   TIPPITCHMIN][Constant:                4 B] Used   273 times
+[                   BASEYAWAXIS][Constant:                1 B] Used   273 times
+[                  WEAPONRANGE2][Constant:                4 B] Used   273 times
+[                     CRITPRONE][Constant:                1 B] Used   273 times
+[             LOGICATTACKCHANCE][Constant:                1 B] Used   273 times
+[                  NEARBASEXFIX][Constant:                4 B] Used   273 times
+[                 HEADBONEINDEX][Constant:                1 B] Used   273 times
+[                  WEAPONPOINT4][Min:       0 B Max      12 B] Used   273 times
+[                   USEPRIMARY3][Constant:                6 B] Used   273 times
+[                  RESETWHENDIE][Min:       0 B Max       5 B] Used   273 times
+[                   USEPRIMARY2][Constant:                6 B] Used   273 times
+[                  TIPBONEINDEX][Constant:                1 B] Used   273 times
+[                 REGIONTARGETS][Constant:                6 B] Used   273 times
+[                      CANCLIMB][Min:       0 B Max       5 B] Used   273 times
+[                     ALWAYSRUN][Min:       0 B Max       5 B] Used   273 times
+[                   HEADYAWAXIS][Constant:                1 B] Used   273 times
+[                CLIMBENDHEIGHT][Constant:                4 B] Used   273 times
+[                 MINCOVERSHOTS][Constant:                1 B] Used   273 times
+[                  BASEPITCHMIN][Constant:                4 B] Used   273 times
+[                    WANTSCOVER][Min:       0 B Max       5 B] Used   273 times
+[              LOGICCOVERCHANCE][Constant:                1 B] Used   273 times
+[               ATTACKRESETTIME][Constant:                4 B] Used   273 times
+[             FEARFULTHRESHHOLD][Constant:                4 B] Used   273 times
+[                NEARBASEYAWMIN][Constant:                4 B] Used   273 times
+[             SLOWSWIMMINGSPEED][Constant:                4 B] Used   273 times
+[            CRITICALTHRESHHOLD][Constant:                4 B] Used   273 times
+[                     CRITCOVER][Constant:                1 B] Used   273 times
+[                  WEAPONPOINT3][Min:       0 B Max      15 B] Used   273 times
+[                  CRITNOCHANGE][Constant:                1 B] Used   273 times
+[                      CRITFLEE][Constant:                1 B] Used   273 times
+[                   CRITRETREAT][Constant:                1 B] Used   273 times
+[                 CRITSURRENDER][Constant:                1 B] Used   273 times
+[                   WEAPONNAME2][Min:       0 B Max      63 B] Used   273 times
+[             NEARBASEBONEINDEX][Constant:                1 B] Used   273 times
+[                   WEAPONNAME4][Min:       0 B Max      53 B] Used   273 times
+[             SLOWMOVEMENTSPEED][Constant:                4 B] Used   273 times
+[                  WEAPONRANGE4][Constant:                4 B] Used   273 times
+[                 NEARTIPYAWMAX][Constant:                4 B] Used   273 times
+[                  HEADPITCHMAX][Constant:                4 B] Used   273 times
+[                    HEADYAWMAX][Constant:                4 B] Used   273 times
+[                  TIPPITCHAXIS][Constant:                1 B] Used   273 times
+[                      BACKZFIX][Constant:                4 B] Used   273 times
+[                  BACKPITCHMAX][Constant:                4 B] Used   273 times
+[                  NEARBASEYFIX][Constant:                4 B] Used   273 times
+[               USETAILTRACKING][Min:       0 B Max       5 B] Used   273 times
+[                 BASEBONEINDEX][Constant:                1 B] Used   273 times
+[                      BACKXFIX][Constant:                4 B] Used   273 times
+[                       TIPYFIX][Constant:                4 B] Used   273 times
+[                 BASEPITCHAXIS][Constant:                1 B] Used   273 times
+[                  WEAPONRANGE1][Constant:                4 B] Used   273 times
+[                      BASEYFIX][Constant:                4 B] Used   273 times
+[                      BACKYFIX][Constant:                4 B] Used   273 times
+[                      BASEZFIX][Constant:                4 B] Used   273 times
+[                    BASEYAWMAX][Constant:                4 B] Used   273 times
+[       LOGICINITIALCOVERCHANCE][Constant:                1 B] Used   273 times
+[                NEARBASEYAWMAX][Constant:                4 B] Used   273 times
+[                 BASEPITCHCORR][Constant:                4 B] Used   273 times
+[                   WEAPONNAME5][Min:       0 B Max      45 B] Used   273 times
+[                  NEARBASEZFIX][Constant:                4 B] Used   273 times
+[             NEARBASEPITCHCORR][Constant:                4 B] Used   273 times
+[             NEARBASEPITCHAXIS][Constant:                1 B] Used   273 times
+[               NEARTIPPITCHMAX][Constant:                4 B] Used   273 times
+[              NEARTIPPITCHCORR][Constant:                4 B] Used   273 times
+[                    TIPYAWAXIS][Constant:                1 B] Used   273 times
+[                     TIPYAWMIN][Constant:                4 B] Used   273 times
+[             USEGROUNDTRACKING][Min:       0 B Max       6 B] Used   273 times
+[                   BACKYAWAXIS][Constant:                1 B] Used   273 times
+[                   WEAPONNAME1][Min:       0 B Max      70 B] Used   273 times
+[                  WEAPONPOINT1][Min:       0 B Max      12 B] Used   273 times
+[                       TIPXFIX][Constant:                4 B] Used   273 times
+[                CANMONKEYCLIMB][Min:       0 B Max       5 B] Used   273 times
+[                      HEADYFIX][Constant:                4 B] Used   273 times
+[               USEHEADTRACKING][Min:       0 B Max       5 B] Used   273 times
+[                      ISSNIPER][Constant:                6 B] Used   273 times
+[               LEASHEDTOREGION][Min:       0 B Max       5 B] Used   273 times
+[                    BASEYAWMIN][Constant:                4 B] Used   273 times
+[                  WEAPONPOINT2][Min:       0 B Max      16 B] Used   273 times
+[                   PROVOKEONLY][Min:       0 B Max       5 B] Used   273 times
+[                   USEPRIMARY1][Min:       0 B Max       5 B] Used   273 times
+[                      HEADXFIX][Constant:                4 B] Used   273 times
+[                 BACKBONEINDEX][Constant:                1 B] Used   273 times
+[                    HEADYAWMIN][Constant:                4 B] Used   273 times
+[                      CANCRAWL][Min:       0 B Max       5 B] Used   273 times
+[      LOGICINITIALATTACKCHANCE][Constant:                1 B] Used   273 times
+[                      HEADZFIX][Constant:                4 B] Used   273 times
+[                  BACKPITCHMIN][Constant:                4 B] Used   273 times
+[                   USEPRIMARY5][Constant:                6 B] Used   273 times
+[                NEARTIPYAWAXIS][Constant:                1 B] Used   273 times
+[                 NEARTIPYAWMIN][Constant:                4 B] Used   273 times
+[                 BACKPITCHCORR][Constant:                4 B] Used   273 times
+[                      BASEXFIX][Constant:                4 B] Used   273 times
+[                      SXZANGLE][Constant:                4 B] Used   272 times
+[                       SYANGLE][Constant:                4 B] Used   272 times
+[                         WTIME][Constant:                4 B] Used   271 times
+[                        RDELAY][Constant:                4 B] Used   271 times
+[                        WPTIME][Constant:                4 B] Used   271 times
+[                      IGNALBOX][Min:       0 B Max       5 B] Used   271 times
+[                     DFTURRETS][Constant:                6 B] Used   271 times
+[                  BREACHRADIUS][Constant:                4 B] Used   271 times
+[                ATTACKONBREACH][Constant:                6 B] Used   271 times
+[             SPAWNACTOR5CHANCE][Constant:                1 B] Used   270 times
+[           SPAWNACTOR4VELOCITY][Constant:                4 B] Used   270 times
+[           SPAWNACTOR3VELOCITY][Constant:                4 B] Used   270 times
+[                    HASSTARGET][Constant:                6 B] Used   270 times
+[                   INITIALMODE][Constant:                1 B] Used   270 times
+[                    HASPTARGET][Min:       0 B Max       5 B] Used   270 times
+[             SPAWNACTOR2CHANCE][Constant:                1 B] Used   270 times
+[                      GIBDEATH][Min:       0 B Max       5 B] Used   270 times
+[                    BACKPYCORR][Constant:                4 B] Used   270 times
+[                       GIBPART][Min:       0 B Max      75 B] Used   270 times
+[                  INITIALALERT][Constant:                1 B] Used   270 times
+[                      CUCCOVER][Min:       0 B Max       6 B] Used   270 times
+[                      CUOCOVER][Min:       0 B Max       6 B] Used   270 times
+[                         FLEER][Constant:                4 B] Used   270 times
+[                      CUUCOVER][Min:       0 B Max       6 B] Used   270 times
+[                   ONLYPTARGET][Min:       0 B Max       5 B] Used   270 times
+[                    HEADPPCORR][Constant:                4 B] Used   270 times
+[                    HEADPYCORR][Constant:                4 B] Used   270 times
+[                 DEFTRANSBLEND][Constant:                4 B] Used   270 times
+[                       MDSOUND][Min:       0 B Max       6 B] Used   270 times
+[                      SLOWTURN][Min:       0 B Max       5 B] Used   270 times
+[                       HDSOUND][Min:       0 B Max       6 B] Used   270 times
+[                   SPAWNACTOR1][Min:       0 B Max      91 B] Used   270 times
+[                   SPAWNACTOR2][Min:       0 B Max      69 B] Used   270 times
+[                   SPAWNACTOR3][Min:       0 B Max      87 B] Used   270 times
+[                   SPAWNACTOR4][Constant:                1 B] Used   270 times
+[                   SPAWNACTOR5][Constant:                1 B] Used   270 times
+[           SPAWNACTOR1VELOCITY][Constant:                4 B] Used   270 times
+[                    BACKPPCORR][Constant:                4 B] Used   270 times
+[           SPAWNACTOR2VELOCITY][Constant:                4 B] Used   270 times
+[           SPAWNACTOR5VELOCITY][Constant:                4 B] Used   270 times
+[             SPAWNACTOR1CHANCE][Constant:                1 B] Used   270 times
+[             SPAWNACTOR3CHANCE][Constant:                1 B] Used   270 times
+[             SPAWNACTOR4CHANCE][Constant:                1 B] Used   270 times
+[                      KEEPADIS][Min:       0 B Max       6 B] Used   270 times
+[                       LDSOUND][Min:       0 B Max       6 B] Used   270 times
+[                    ALWAYSWALK][Constant:                6 B] Used   269 times
+[                       AIAVOID][Min:       0 B Max       6 B] Used   269 times
+[                           SGR][Constant:                1 B] Used   269 times
+[                         SCALE][Constant:               12 B] Used   222 times
+[               CANBESWARMBORED][Min:       0 B Max       6 B] Used   158 times
+[                          TRNS][Min:       0 B Max   43300 B] Used   155 times
+[                  CANDISMEMBER][Min:       0 B Max       6 B] Used   141 times
+[                BODYPARTPREFIX][Min:       0 B Max      23 B] Used   141 times
+[                  CANTBEPUSHED][Min:       0 B Max       5 B] Used   139 times
+[             VERTCLIMBINGSPEED][Constant:                4 B] Used   119 times
+[             HORZCLIMBINGSPEED][Constant:                4 B] Used   119 times
+[                MINASSAULTDIST][Constant:                4 B] Used   114 times
+[              CANBEGRAVITYHELD][Min:       0 B Max       6 B] Used   114 times
+[                        SPINTI][Constant:                4 B] Used   114 times
+[                       CHEVADE][Min:       0 B Max       5 B] Used   114 times
+[                HEADFLINCHBONE][Constant:                1 B] Used   114 times
+[                        SPINTS][Constant:                4 B] Used   114 times
+[                      CALLSOUT][Min:       0 B Max       5 B] Used   114 times
+[               TORSOFLINCHBONE][Constant:                1 B] Used   114 times
+[                MAXASSAULTDIST][Constant:                4 B] Used   114 times
+[                  ASSAULTFRONT][Constant:                5 B] Used   114 times
+[                  EVADEACQUIRE][Constant:                1 B] Used   114 times
+[                   EVADEATTACK][Constant:                1 B] Used   114 times
+[                       CREVADE][Min:       0 B Max       5 B] Used   114 times
+[                   CANTELEPORT][Min:       0 B Max       5 B] Used   114 times
+[               SWITCHCOLLISION][Min:       0 B Max       6 B] Used   114 times
+[                    FOLLOWDIST][Constant:                4 B] Used   114 times
+[                   EVADEDAMAGE][Constant:                1 B] Used   114 times
+[                        SPINTF][Constant:                4 B] Used   114 times
+[                    DOORSTATUS][Constant:                1 B] Used   100 times
+[                  LOCKEDSTATUS][Constant:                1 B] Used   100 times
+[                        STDFAN][Constant:                4 B] Used    75 times
+[                        STSSPD][Constant:                4 B] Used    75 times
+[                        STFBNC][Constant:                4 B] Used    75 times
+[                        STFRAD][Constant:                4 B] Used    75 times
+[                        STADEF][Min:       0 B Max       5 B] Used    75 times
+[                        STSCNT][Constant:                4 B] Used    75 times
+[                        STTYPE][Constant:                1 B] Used    75 times
+[                        STCLSN][Min:       0 B Max       5 B] Used    75 times
+[                         STAMN][Constant:                4 B] Used    75 times
+[                         STCHS][Constant:                4 B] Used    75 times
+[                        STFALL][Min:       0 B Max       6 B] Used    75 times
+[                        STFSPD][Constant:                4 B] Used    75 times
+[                       STFRSPD][Constant:                4 B] Used    75 times
+[                        STSAMN][Constant:                4 B] Used    75 times
+[                         STSPD][Constant:                4 B] Used    75 times
+[                        STSPDR][Constant:                4 B] Used    75 times
+[                          AS_S][Constant:                1 B] Used    69 times
+[                     DROPSOUND][Min:       0 B Max       7 B] Used    61 times
+[                    DANCESPEED][Constant:                4 B] Used    57 times
+[                        DANCES][Constant:                6 B] Used    57 times
+[                   DANCEAMOUNT][Constant:                4 B] Used    57 times
+[                    PICKUPTYPE][Constant:                1 B] Used    57 times
+[                  HEALTHAMOUNT][Constant:                4 B] Used    57 times
+[                    AMMOAMOUNT][Constant:                1 B] Used    57 times
+[                        RSPWNT][Constant:                4 B] Used    55 times
+[                 EWSECMAXFIRES][Constant:                1 B] Used    52 times
+[               EWSECRELOADTIME][Constant:                4 B] Used    52 times
+[                    EWPARTNAME][Min:       0 B Max      77 B] Used    52 times
+[                 EWALTPARTNAME][Min:       0 B Max      52 B] Used    52 times
+[                   EWFLASHNAME][Min:       0 B Max      68 B] Used    52 times
+[                  PRIMARYSOUND][Min:       0 B Max       1 B] Used    52 times
+[                    EWMINFIRES][Constant:                1 B] Used    52 times
+[                    EWMAXFIRES][Constant:                1 B] Used    52 times
+[                 EWSECPARTNAME][Min:       0 B Max      47 B] Used    52 times
+[                EWSECFLASHNAME][Min:       0 B Max      64 B] Used    52 times
+[                SECONDARYSOUND][Min:       0 B Max       7 B] Used    52 times
+[                    EWHOLDDOWN][Min:       0 B Max       5 B] Used    52 times
+[                  EWRELOADTIME][Constant:                4 B] Used    52 times
+[                 EWSECMINFIRES][Constant:                1 B] Used    52 times
+[                      EWMODVEL][Min:       0 B Max       5 B] Used    52 times
+[                   EWALTCHANCE][Constant:                1 B] Used    52 times
+[                   EWTHROWDIST][Constant:                4 B] Used    52 times
+[                 EWFLASHCHANCE][Constant:                1 B] Used    52 times
+[                  DEATHLONGSND][Min:       0 B Max       1 B] Used    39 times
+[         STERACOSAUR_TURNSPEED][Constant:                4 B] Used    39 times
+[                    PT_FRSDACC][Constant:                4 B] Used    39 times
+[                    PT_CAMLFOV][Constant:                4 B] Used    39 times
+[                     JMPLNDSND][Min:       0 B Max       7 B] Used    39 times
+[                  PT_CAMLCHLAG][Constant:                1 B] Used    39 times
+[                    PT_CAM1YPB][Constant:                4 B] Used    39 times
+[                     TURNSPEED][Constant:                4 B] Used    39 times
+[              LEDGESHIMMYSPEED][Constant:                4 B] Used    39 times
+[                      PT_LPWAV][Constant:                4 B] Used    39 times
+[                 PT_CAMLYLAOFF][Constant:                4 B] Used    39 times
+[                     PT_WEAMSD][Constant:                4 B] Used    39 times
+[                  PT_CAMLCROLL][Constant:                4 B] Used    39 times
+[                MAXSTRAFESPEED][Constant:                4 B] Used    39 times
+[                      PT_ACDAM][Constant:                4 B] Used    39 times
+[          STERACOSAUR_DASHTIME][Constant:                4 B] Used    39 times
+[                  PT_CAMLYEYSW][Constant:                4 B] Used    39 times
+[               FALLINGSPLATSND][Min:       0 B Max       1 B] Used    39 times
+[                  PT_CAMLYLASW][Constant:                4 B] Used    39 times
+[       STERACOSAUR_MAXRUNSPEED][Constant:                4 B] Used    39 times
+[                    MAXBOWAMMO][Constant:                1 B] Used    39 times
+[                     PT_FREDGR][Constant:                4 B] Used    39 times
+[            WATERSURFACEBADSND][Min:       0 B Max       1 B] Used    39 times
+[                  PAINHEAVYSND][Min:       0 B Max       1 B] Used    39 times
+[                   CLIMB_SPEED][Constant:                4 B] Used    39 times
+[                    PT_CAMLLAL][Constant:                4 B] Used    39 times
+[               CROUCHEYEHEIGHT][Constant:                4 B] Used    39 times
+[                  PT_CAM3CROLL][Constant:                4 B] Used    39 times
+[            PAINPOISONGROANSND][Min:       0 B Max       1 B] Used    39 times
+[         RAPTOR_MAXSTRAFESPEED][Constant:                4 B] Used    39 times
+[                      DROWNSND][Min:       0 B Max       1 B] Used    39 times
+[             MAXCROUCHRUNSPEED][Constant:                4 B] Used    39 times
+[                 PT_FRFGUPAMNT][Constant:                4 B] Used    39 times
+[                 MAXTEKBOWAMMO][Constant:                1 B] Used    39 times
+[         MAXDARKMATTERCUBEAMMO][Constant:                1 B] Used    39 times
+[    STERACOSAUR_MAXSTRAFESPEED][Constant:                4 B] Used    39 times
+[                    PT_CAM1ZPB][Constant:                4 B] Used    39 times
+[                    PT_CAM3LAC][Constant:                4 B] Used    39 times
+[                RAPTOR_TURNLAG][Constant:                4 B] Used    39 times
+[                     PT_FRDACC][Constant:                4 B] Used    39 times
+[                     PT_WEAMGD][Constant:                4 B] Used    39 times
+[            FALLDAMAGEMINSPEED][Constant:                4 B] Used    39 times
+[                       WADESND][Min:       0 B Max      18 B] Used    39 times
+[             MAXTECHWEAPONAMMO][Constant:                1 B] Used    39 times
+[                       PT_FRGR][Constant:                4 B] Used    39 times
+[                    PT_CAMLETB][Constant:                4 B] Used    39 times
+[                   PT_FREDHACC][Constant:                4 B] Used    39 times
+[              RAPTOR_EYEHEIGHT][Constant:                4 B] Used    39 times
+[                    PLAYERTYPE][Constant:                1 B] Used    39 times
+[                 DEATHSHORTSND][Min:       0 B Max       1 B] Used    39 times
+[          CLIMB_HORIZVIEWANGLE][Constant:                4 B] Used    39 times
+[                  PT_FRSDSTART][Constant:                4 B] Used    39 times
+[                 PAINMEDIUMSND][Min:       0 B Max       1 B] Used    39 times
+[             RAPTOR_EYEZOFFSET][Constant:                4 B] Used    39 times
+[                    PT_FRSDMAX][Constant:                4 B] Used    39 times
+[                    PT_CAM3LAL][Constant:                4 B] Used    39 times
+[                 ENTERWATERSND][Min:       0 B Max       1 B] Used    39 times
+[                     EYEHEIGHT][Constant:                4 B] Used    39 times
+[                 MAXPISTOLAMMO][Constant:                1 B] Used    39 times
+[                MAXSHOTGUNAMMO][Constant:                1 B] Used    39 times
+[                MAXMINIGUNAMMO][Constant:                1 B] Used    39 times
+[               MAXLAUNCHERAMMO][Constant:                1 B] Used    39 times
+[                MAXGRENADEAMMO][Constant:                1 B] Used    39 times
+[           MAXGUIDEDDEVICEAMMO][Constant:                1 B] Used    39 times
+[                  JUMPVELOCITY][Constant:                4 B] Used    39 times
+[          MAXCROUCHSTRAFESPEED][Constant:                4 B] Used    39 times
+[            FALLDAMAGEMAXSPEED][Constant:                4 B] Used    39 times
+[                     SWIMSPEED][Constant:                4 B] Used    39 times
+[              DROWNINITIALTIME][Constant:                4 B] Used    39 times
+[                 DROWNINTERVAL][Constant:                4 B] Used    39 times
+[                   DROWNDAMAGE][Constant:                4 B] Used    39 times
+[                   CLIMB_ACCEL][Constant:                4 B] Used    39 times
+[                   CLIMB_DECEL][Constant:                4 B] Used    39 times
+[            RAPTOR_MAXRUNSPEED][Constant:                4 B] Used    39 times
+[           RAPTOR_JUMPVELOCITY][Constant:                4 B] Used    39 times
+[      STERACOSAUR_CAMERAHEIGHT][Constant:                4 B] Used    39 times
+[    STERACOSAUR_CAMERADISTANCE][Constant:                4 B] Used    39 times
+[         STERACOSAUR_DASHSPEED][Constant:                4 B] Used    39 times
+[  STERACOSAUR_DASHRECHARGETIME][Constant:                4 B] Used    39 times
+[                      PT_WODAM][Constant:                4 B] Used    39 times
+[                      PT_WOSTN][Constant:                4 B] Used    39 times
+[                      PT_ACSTN][Constant:                4 B] Used    39 times
+[                    PT_FRSDMIN][Constant:                4 B] Used    39 times
+[                     PT_FRHACC][Constant:                4 B] Used    39 times
+[                     PT_FRUACC][Constant:                4 B] Used    39 times
+[                     PT_FRHDMP][Constant:                4 B] Used    39 times
+[                     PT_FRVDMP][Constant:                4 B] Used    39 times
+[                  PT_FRFGUPSPD][Constant:                4 B] Used    39 times
+[                    PT_CAM1FOV][Constant:                4 B] Used    39 times
+[                  PT_FRFGDNSPD][Constant:                4 B] Used    39 times
+[                 PT_FRFGDNAMNT][Constant:                4 B] Used    39 times
+[                   MAXRUNSPEED][Constant:                4 B] Used    39 times
+[                  PT_FRFGUPBLN][Constant:                4 B] Used    39 times
+[                  PT_FRFGDNBLN][Constant:                4 B] Used    39 times
+[                   PT_FREDVACC][Constant:                4 B] Used    39 times
+[                  PT_RIDERNAME][Min:       0 B Max      59 B] Used    39 times
+[                 PT_RIDERPOINT][Min:       0 B Max      11 B] Used    39 times
+[                  PT_CAM1CROLL][Constant:                4 B] Used    39 times
+[                    PT_CAM3FOV][Constant:                4 B] Used    39 times
+[                    PT_CAM3ETB][Constant:                4 B] Used    39 times
+[                     PT_CAM3EL][Constant:                4 B] Used    39 times
+[                    PT_CAM3EAC][Constant:                4 B] Used    39 times
+[                    PT_CAMLCLA][Constant:                4 B] Used    39 times
+[                     PT_CAMLEL][Constant:                4 B] Used    39 times
+[                 PT_CAMLYEYOFF][Constant:                4 B] Used    39 times
+[                  PT_CAMLPROLL][Constant:                4 B] Used    39 times
+[                    FLTLEFTSND][Min:       0 B Max       6 B] Used    39 times
+[                   FLTRIGHTSND][Min:       0 B Max       7 B] Used    39 times
+[                   FLTSPEEDSND][Min:       0 B Max       7 B] Used    39 times
+[                  FLTLOCKONSND][Min:       0 B Max       7 B] Used    39 times
+[                FLTHITWORLDSND][Min:       0 B Max       7 B] Used    39 times
+[               FLTWATERSKIMSND][Min:       0 B Max       7 B] Used    39 times
+[               FLTNOMISSILESND][Min:       0 B Max       7 B] Used    39 times
+[             FLTMISSILEFIRESND][Min:       0 B Max       5 B] Used    39 times
+[                       FOOTSND][Min:       0 B Max       1 B] Used    39 times
+[                        JMPSND][Min:       0 B Max       6 B] Used    39 times
+[                       TURNSND][Min:       0 B Max      18 B] Used    39 times
+[                SURFACESWIMSND][Min:       0 B Max       1 B] Used    39 times
+[             UNDERWATERSWIMSND][Min:       0 B Max       1 B] Used    39 times
+[                  EXITWATERSND][Min:       0 B Max       1 B] Used    39 times
+[           WATERSURFACEGOODSND][Min:       0 B Max       1 B] Used    39 times
+[                 DROWNDEATHSND][Min:       0 B Max       1 B] Used    39 times
+[                    FALLINGSND][Min:       0 B Max       6 B] Used    39 times
+[                      CLIMBSND][Min:       0 B Max       1 B] Used    39 times
+[                  PAINLIGHTSND][Min:       0 B Max       1 B] Used    39 times
+[            PAINPOISONCHOKESND][Min:       0 B Max       1 B] Used    39 times
+[            DEATHSWARMBOREDSND][Min:       0 B Max       1 B] Used    39 times
+[              JUMPLANDHEAVYSND][Min:       0 B Max      18 B] Used    39 times
+[                 EASYAIMRADIUS][Constant:                4 B] Used    39 times
+[                   PICKUPSOUND][Min:       0 B Max       1 B] Used    38 times
+[                             Y][Constant:                4 B] Used    35 times
+[                             X][Constant:                4 B] Used    35 times
+[                             Z][Constant:                4 B] Used    35 times
+[                  RESPAWNSOUND][Min:       0 B Max       1 B] Used    34 times
+[                SHIELDOFFSOUND][Min:       0 B Max       1 B] Used    32 times
+[               REGENERATESOUND][Min:       0 B Max       1 B] Used    32 times
+[               DEADPLAYERACTOR][Min:       0 B Max      86 B] Used    32 times
+[                CELEBRATESOUND][Min:       0 B Max       1 B] Used    32 times
+[                 SHIELDONSOUND][Min:       0 B Max       1 B] Used    32 times
+[                      ISRAPTOR][Min:       0 B Max       5 B] Used    32 times
+[          DEATHHELMACTIVESOUND][Min:       0 B Max       1 B] Used    32 times
+[             POISONDAMAGESOUND][Min:       0 B Max       6 B] Used    32 times
+[              POISONDEATHSOUND][Min:       0 B Max       6 B] Used    32 times
+[                YELLOWTEAMMESH][Min:       0 B Max      82 B] Used    32 times
+[          CLOAKINGBELTOFFSOUND][Min:       0 B Max       1 B] Used    32 times
+[                 GREENTEAMMESH][Min:       0 B Max      82 B] Used    32 times
+[             SHIELDACTIVESOUND][Min:       0 B Max       1 B] Used    32 times
+[             SHIELDDAMAGESOUND][Min:       0 B Max       1 B] Used    32 times
+[              DEATHHELMONSOUND][Min:       0 B Max       1 B] Used    32 times
+[             DEATHHELMOFFSOUND][Min:       0 B Max       1 B] Used    32 times
+[           CLOAKINGBELTONSOUND][Min:       0 B Max       1 B] Used    32 times
+[                    TAUNTSOUND][Min:       0 B Max       1 B] Used    32 times
+[            POISONRECOVERSOUND][Min:       0 B Max       6 B] Used    32 times
+[                   PT_WEAMSDMG][Constant:                4 B] Used    31 times
+[                      SNAPSHOT][Min:       0 B Max       6 B] Used    31 times
+[                   PT_WEAMSSPD][Constant:                4 B] Used    31 times
+[                   PT_WEAMGDMG][Constant:                4 B] Used    31 times
+[                 RAGELOOPSOUND][Min:       0 B Max       1 B] Used    29 times
+[                  SPEEDONSOUND][Min:       0 B Max       1 B] Used    29 times
+[                  RAGEENDSOUND][Min:       0 B Max       1 B] Used    29 times
+[                JUMPBOOTSSOUND][Min:       0 B Max       1 B] Used    29 times
+[                ENTERRAGESOUND][Min:       0 B Max       1 B] Used    29 times
+[                 SPEEDOFFSOUND][Min:       0 B Max       1 B] Used    29 times
+[                 FLYINGPERTURB][Constant:                1 B] Used    24 times
+[                  GAMINNUMBERS][Constant:                1 B] Used    24 times
+[                   GAGROUPNAME][Min:       0 B Max       6 B] Used    24 times
+[                 ALTERNATETYPE][Min:       0 B Max      69 B] Used    24 times
+[                      BIRDFORM][Constant:                1 B] Used    24 times
+[                   FLIGHTSPEED][Constant:                4 B] Used    24 times
+[                   FLYINGHOVER][Constant:                1 B] Used    24 times
+[                  FLAPBEHAVIOR][Constant:                1 B] Used    24 times
+[                 GAGROUPATTACK][Min:       0 B Max       6 B] Used    24 times
+[                          TERR][Constant:                4 B] Used    23 times
+[                XROTATIONSPEED][Constant:                4 B] Used    23 times
+[                         TIGMY][Constant:                6 B] Used    23 times
+[               ENEMYTURRETTYPE][Constant:                1 B] Used    23 times
+[                  MAXXROTATION][Constant:                4 B] Used    23 times
+[                         TIGMX][Constant:                6 B] Used    23 times
+[                  MAXYROTATION][Constant:                4 B] Used    23 times
+[                YROTATIONSPEED][Constant:                4 B] Used    23 times
+[                 YROTATIONBONE][Constant:                1 B] Used    23 times
+[                    PLAYERMODE][Constant:                1 B] Used    23 times
+[                    TURRETTYPE][Constant:                1 B] Used    23 times
+[              AUTOTURRETRADIUS][Constant:                4 B] Used    23 times
+[                          SFRE][Constant:                4 B] Used    23 times
+[                 XROTATIONBONE][Constant:                1 B] Used    23 times
+[                     SCALEBASE][Constant:                4 B] Used    18 times
+[             POSITIONYUPGRADE1][Constant:                4 B] Used    18 times
+[   MUZZLERIDINGYFACTORUPGRADE1][Constant:                4 B] Used    18 times
+[    USABLEWHENCLIMBINGUPGRADE2][Constant:                6 B] Used    18 times
+[       MUZZLERIDINGYFACTORBASE][Constant:                4 B] Used    18 times
+[           AMMOPERCLIPUPGRADE1][Constant:                1 B] Used    18 times
+[    USABLEWHENCLIMBINGUPGRADE1][Constant:                6 B] Used    18 times
+[                    ISUPGRADE1][Min:       0 B Max       6 B] Used    18 times
+[       TWOHANDEDWEAPONUPGRADE2][Constant:                6 B] Used    18 times
+[            WEAPONTYPEUPGRADE2][Constant:                1 B] Used    18 times
+[          USABLEUNDERWATERBASE][Min:       0 B Max       5 B] Used    18 times
+[                    ISUPGRADE2][Min:       0 B Max       5 B] Used    18 times
+[       AMMOUSEDPERSHOTUPGRADE2][Constant:                1 B] Used    18 times
+[                 POSITIONZBASE][Constant:                4 B] Used    18 times
+[               AMMOPERCLIPBASE][Constant:                1 B] Used    18 times
+[           AMMOPERCLIPUPGRADE2][Constant:                1 B] Used    18 times
+[   MUZZLERIDINGXFACTORUPGRADE1][Constant:                4 B] Used    18 times
+[                WEAPONTYPEBASE][Constant:                1 B] Used    18 times
+[                        WEAPON][Constant:                1 B] Used    18 times
+[                WEAPONNAMEBASE][Constant:                8 B] Used    18 times
+[        USABLEWHENCLIMBINGBASE][Min:       0 B Max       5 B] Used    18 times
+[                 POSITIONXBASE][Constant:                4 B] Used    18 times
+[                 POSITIONYBASE][Constant:                4 B] Used    18 times
+[           AMMOUSEDPERSHOTBASE][Constant:                1 B] Used    18 times
+[       MUZZLERIDINGXFACTORBASE][Constant:                4 B] Used    18 times
+[            WEAPONNAMEUPGRADE1][Constant:                8 B] Used    18 times
+[      USABLEUNDERWATERUPGRADE1][Constant:                6 B] Used    18 times
+[       TWOHANDEDWEAPONUPGRADE1][Min:       0 B Max       5 B] Used    18 times
+[            WEAPONTYPEUPGRADE1][Constant:                1 B] Used    18 times
+[             POSITIONXUPGRADE1][Constant:                4 B] Used    18 times
+[             POSITIONZUPGRADE1][Constant:                4 B] Used    18 times
+[                 SCALEUPGRADE1][Constant:                4 B] Used    18 times
+[       AMMOUSEDPERSHOTUPGRADE1][Constant:                1 B] Used    18 times
+[            WEAPONNAMEUPGRADE2][Constant:                8 B] Used    18 times
+[      USABLEUNDERWATERUPGRADE2][Constant:                6 B] Used    18 times
+[             POSITIONXUPGRADE2][Constant:                4 B] Used    18 times
+[             POSITIONZUPGRADE2][Constant:                4 B] Used    18 times
+[                 SCALEUPGRADE2][Constant:                4 B] Used    18 times
+[   MUZZLERIDINGXFACTORUPGRADE2][Constant:                4 B] Used    18 times
+[   MUZZLERIDINGYFACTORUPGRADE2][Constant:                4 B] Used    18 times
+[           TWOHANDEDWEAPONBASE][Min:       0 B Max       5 B] Used    18 times
+[             POSITIONYUPGRADE2][Constant:                4 B] Used    18 times
+[                  COVER_RADIUS][Constant:                4 B] Used    14 times
+[                        W_SUHF][Constant:                1 B] Used    14 times
+[                          W_SP][Constant:                1 B] Used    14 times
+[                        W_SUHI][Constant:                1 B] Used    14 times
+[                         W_FSY][Constant:                4 B] Used    14 times
+[                         W_DSX][Constant:                4 B] Used    14 times
+[                          W_BA][Constant:                4 B] Used    14 times
+[                          W_FC][Constant:                4 B] Used    14 times
+[                    COVER_TYPE][Constant:                1 B] Used    14 times
+[                   STEPOUT_DIR][Constant:                1 B] Used    14 times
+[                         W_THF][Constant:                1 B] Used    14 times
+[                        W_XLAY][Constant:                1 B] Used    14 times
+[                          W_BC][Constant:                1 B] Used    14 times
+[                          W_WC][Constant:                1 B] Used    14 times
+[                          W_BM][Min:       0 B Max       1 B] Used    14 times
+[                         W_FON][Min:       0 B Max      35 B] Used    14 times
+[                         W_TMF][Constant:                1 B] Used    14 times
+[                         W_TMN][Constant:                1 B] Used    14 times
+[                         W_THI][Constant:                1 B] Used    14 times
+[                           W_T][Constant:                1 B] Used    14 times
+[                         W_DSC][Constant:                1 B] Used    14 times
+[                         W_DSY][Constant:                4 B] Used    14 times
+[                         W_SUB][Constant:                1 B] Used    14 times
+[                          DRAG][Constant:                4 B] Used    14 times
+[                         W_FSX][Constant:                4 B] Used    14 times
+[                        W_YLAY][Constant:                1 B] Used    14 times
+[                 AMMOUPG1SLOT7][Min:       0 B Max       6 B] Used    12 times
+[                 AMMOUPG1SLOT3][Constant:                1 B] Used    12 times
+[                 AMMOUPG1SLOT1][Constant:                1 B] Used    12 times
+[                 AMMOUPG1SLOT5][Min:       0 B Max       5 B] Used    12 times
+[                GRAVITYFACTORZ][Constant:                4 B] Used    12 times
+[                 AMMOUPG1SLOT2][Min:       0 B Max       6 B] Used    12 times
+[                 UPGRADE2SLOT7][Min:       0 B Max       4 B] Used    12 times
+[                 AMMOUPG0SLOT0][Min:       0 B Max       6 B] Used    12 times
+[                   AXIALFIELDX][Constant:                4 B] Used    12 times
+[          STARTSOFFWITHWEAPON7][Min:       0 B Max       5 B] Used    12 times
+[                    PATHEFFECT][Constant:                1 B] Used    12 times
+[                 CIRCULARRAMPZ][Constant:                4 B] Used    12 times
+[                 AMMOUPG0SLOT5][Min:       0 B Max       4 B] Used    12 times
+[                 AMMOUPG0SLOT6][Min:       0 B Max       4 B] Used    12 times
+[                 AMMOUPG0SLOT2][Min:       0 B Max       6 B] Used    12 times
+[                          R_TT][Constant:                6 B] Used    12 times
+[                  PLANARFIELDX][Constant:                4 B] Used    12 times
+[                 UPGRADE1SLOT6][Min:       0 B Max       4 B] Used    12 times
+[          STARTSOFFWITHWEAPON4][Min:       0 B Max       8 B] Used    12 times
+[                 AMMOUPG2SLOT0][Min:       0 B Max      18 B] Used    12 times
+[                  PLANARFIELDZ][Constant:                4 B] Used    12 times
+[                   PLANARRAMPZ][Constant:                4 B] Used    12 times
+[                  LINEAREFFECT][Constant:                1 B] Used    12 times
+[                 AMMOUPG2SLOT3][Constant:                1 B] Used    12 times
+[                    PATHINRAMP][Constant:                4 B] Used    12 times
+[                    AXIALRAMPX][Constant:                4 B] Used    12 times
+[                  LINEARFIELDX][Constant:                4 B] Used    12 times
+[                 UPGRADE2SLOT0][Constant:                6 B] Used    12 times
+[                  LINEARFIELDY][Constant:                4 B] Used    12 times
+[                     PATHFIELD][Constant:                4 B] Used    12 times
+[                      PATHRAMP][Constant:                4 B] Used    12 times
+[                 CIRCULARRAMPY][Constant:                4 B] Used    12 times
+[                    POINTFIELD][Constant:                4 B] Used    12 times
+[                   AXIALFIELDZ][Constant:                4 B] Used    12 times
+[                 UPGRADE1SLOT3][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG2SLOT2][Constant:                1 B] Used    12 times
+[                    AXIALRAMPZ][Constant:                4 B] Used    12 times
+[                   PLANARRAMPX][Constant:                4 B] Used    12 times
+[          STARTSOFFWITHWEAPON2][Min:       0 B Max       6 B] Used    12 times
+[                 UPGRADE1SLOT4][Min:       0 B Max       9 B] Used    12 times
+[                   WEAPONSLOT2][Min:       0 B Max       9 B] Used    12 times
+[                          R_NK][Constant:                1 B] Used    12 times
+[                CIRCULARFIELDY][Constant:                4 B] Used    12 times
+[          STARTSOFFWITHWEAPON5][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG0SLOT3][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG2SLOT5][Constant:                1 B] Used    12 times
+[                   AXIALEFFECT][Constant:                1 B] Used    12 times
+[                CIRCULARFIELDX][Constant:                4 B] Used    12 times
+[                 UPGRADE1SLOT5][Min:       0 B Max       5 B] Used    12 times
+[                 UPGRADE1SLOT0][Min:       0 B Max       8 B] Used    12 times
+[               AXIALISRELATIVE][Constant:                5 B] Used    12 times
+[                     POINTRAMP][Constant:                4 B] Used    12 times
+[                          R_AT][Constant:                1 B] Used    12 times
+[                          R_NP][Constant:                4 B] Used    12 times
+[              LINEARISRELATIVE][Constant:                5 B] Used    12 times
+[                  LINEARFIELDZ][Constant:                4 B] Used    12 times
+[                   POINTEFFECT][Constant:                1 B] Used    12 times
+[                   AXIALFIELDY][Constant:                4 B] Used    12 times
+[                    AXIALRAMPY][Constant:                4 B] Used    12 times
+[                     PATHINISH][Constant:                6 B] Used    12 times
+[                  PLANAREFFECT][Constant:                1 B] Used    12 times
+[              PLANARISRELATIVE][Constant:                5 B] Used    12 times
+[                  PLANARFIELDY][Constant:                4 B] Used    12 times
+[                   PLANARRAMPY][Constant:                4 B] Used    12 times
+[                CIRCULAREFFECT][Constant:                1 B] Used    12 times
+[            CIRCULARISRELATIVE][Constant:                5 B] Used    12 times
+[                CIRCULARFIELDZ][Constant:                4 B] Used    12 times
+[                 CIRCULARRAMPX][Constant:                4 B] Used    12 times
+[                   PATHINFIELD][Constant:                4 B] Used    12 times
+[                GRAVITYFACTORY][Constant:                4 B] Used    12 times
+[                   ADDGRAVITYX][Constant:                4 B] Used    12 times
+[                   ADDGRAVITYY][Constant:                4 B] Used    12 times
+[                   ADDGRAVITYZ][Constant:                4 B] Used    12 times
+[                   WEAPONSLOT0][Min:       0 B Max      12 B] Used    12 times
+[          STARTSOFFWITHWEAPON0][Min:       0 B Max       6 B] Used    12 times
+[                 AMMOUPG1SLOT0][Constant:                1 B] Used    12 times
+[                   WEAPONSLOT1][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE1SLOT1][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE2SLOT1][Min:       0 B Max       4 B] Used    12 times
+[          STARTSOFFWITHWEAPON1][Min:       0 B Max       6 B] Used    12 times
+[                 AMMOUPG0SLOT1][Constant:                1 B] Used    12 times
+[                 UPGRADE2SLOT5][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG2SLOT1][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE1SLOT2][Min:       0 B Max       5 B] Used    12 times
+[                 UPGRADE2SLOT2][Min:       0 B Max       8 B] Used    12 times
+[                   WEAPONSLOT3][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE2SLOT3][Min:       0 B Max       4 B] Used    12 times
+[          STARTSOFFWITHWEAPON3][Min:       0 B Max       6 B] Used    12 times
+[                   WEAPONSLOT4][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE2SLOT4][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG0SLOT4][Min:       0 B Max       6 B] Used    12 times
+[                 AMMOUPG1SLOT4][Min:       0 B Max       6 B] Used    12 times
+[                   WEAPONSLOT5][Min:       0 B Max      18 B] Used    12 times
+[                   WEAPONSLOT6][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE2SLOT6][Min:       0 B Max      14 B] Used    12 times
+[          STARTSOFFWITHWEAPON6][Min:       0 B Max       5 B] Used    12 times
+[                 AMMOUPG1SLOT6][Min:       0 B Max       4 B] Used    12 times
+[                 AMMOUPG2SLOT6][Min:       0 B Max       4 B] Used    12 times
+[                   WEAPONSLOT7][Min:       0 B Max       4 B] Used    12 times
+[                 UPGRADE1SLOT7][Min:       0 B Max       1 B] Used    12 times
+[                 AMMOUPG0SLOT7][Min:       0 B Max      20 B] Used    12 times
+[                 AMMOUPG2SLOT7][Min:       0 B Max       4 B] Used    12 times
+[                 AMMOUPG2SLOT4][Min:       0 B Max       6 B] Used    12 times
+[                GRAVITYFACTORX][Constant:                4 B] Used    12 times
+[                   MARKER_TYPE][Constant:                1 B] Used    10 times
+[                COVER_MINRANGE][Constant:                4 B] Used    10 times
+[                COVER_MAXRANGE][Constant:                4 B] Used    10 times
+[                           NLP][Min:       0 B Max       6 B] Used    10 times
+[                        OFFUPT][Constant:                4 B] Used    10 times
+[                      TEAMNAME][Constant:                1 B] Used    10 times
+[                       TARGERR][Constant:                4 B] Used    10 times
+[                       SHOOTFR][Constant:                4 B] Used    10 times
+[                        TARGAN][Constant:                1 B] Used    10 times
+[                        TAUPDT][Constant:                4 B] Used    10 times
+[                          OPSD][Min:       0 B Max       6 B] Used    10 times
+[                         EXSPD][Constant:                4 B] Used    10 times
+[                          OFFX][Constant:                4 B] Used    10 times
+[                          OFFY][Constant:                4 B] Used    10 times
+[                       OFFZMIN][Constant:                4 B] Used    10 times
+[                       OFFZMAX][Constant:                4 B] Used    10 times
+[                         VBSPD][Constant:                4 B] Used    10 times
+[                       EADHEAD][Min:       0 B Max       5 B] Used     9 times
+[                        STATUS][Constant:                5 B] Used     8 times
+[                     USERMODES][Min:       0 B Max     170 B] Used     8 times
+[                      DRYCLICK][Min:       0 B Max       1 B] Used     7 times
+[                    LIGHTCOLOR][Min:       0 B Max       1 B] Used     5 times
+[                ACTOR_DESTRUCT][Constant:               78 B] Used     5 times
+[                         SPEED][Constant:                4 B] Used     5 times
+[                       OFFSETY][Constant:                4 B] Used     4 times
+[                      RETURNED][Constant:                1 B] Used     4 times
+[                 DROPPEDSOUND2][Constant:               20 B] Used     4 times
+[                LIGHTINTENSITY][Constant:                4 B] Used     4 times
+[                 DROPPEDSOUND1][Constant:                7 B] Used     4 times
+[                  CAPTURESOUND][Constant:                7 B] Used     4 times
+[                 SPECULARCOLOR][Min:       0 B Max       4 B] Used     4 times
+[                       OFFSETX][Constant:                4 B] Used     4 times
+[                       OFFSETZ][Constant:                4 B] Used     4 times
+[                     MODEFLAGS][Constant:                1 B] Used     4 times
+[                       MAXTURN][Constant:                4 B] Used     4 times
+[                    RELAXDELAY][Constant:                4 B] Used     4 times
+[                           IST][Constant:                1 B] Used     3 times
+[                          SNA2][Constant:                1 B] Used     3 times
+[                  ACTORCHANCE0][Constant:                1 B] Used     3 times
+[              SPAWNINTERVALPS2][Constant:                4 B] Used     3 times
+[               ACTIVESPAWNSPS2][Constant:                1 B] Used     3 times
+[             SPAWNSFOLLOWSPATH][Min:       0 B Max       6 B] Used     3 times
+[                  ACTORCHANCE1][Constant:                1 B] Used     3 times
+[                           IPS][Constant:                1 B] Used     3 times
+[                           C_B][Constant:                4 B] Used     3 times
+[                 SPAWNINTERVAL][Constant:                4 B] Used     3 times
+[                          XFOV][Constant:                4 B] Used     3 times
+[                          SPGF][Constant:                1 B] Used     3 times
+[                      SNIPEFOV][Constant:                4 B] Used     3 times
+[   BULLET_BIRDMISSILE_VELOCITY][Constant:                4 B] Used     3 times
+[                        ACTOR1][Constant:                1 B] Used     3 times
+[                  ACTORCHANCE2][Constant:                1 B] Used     3 times
+[                        MIRROR][Constant:                6 B] Used     3 times
+[                           F_T][Constant:                4 B] Used     3 times
+[                ACTORQUANTITY2][Constant:                1 B] Used     3 times
+[                           FGZ][Constant:                4 B] Used     3 times
+[                  ACTIVESPAWNS][Constant:                1 B] Used     3 times
+[                     ACTOR4PS2][Constant:                1 B] Used     3 times
+[                 AFFECTSTARGET][Constant:                1 B] Used     3 times
+[                        ACTOR2][Constant:                1 B] Used     3 times
+[                  ACTORCHANCE4][Constant:                1 B] Used     3 times
+[                        ACTOR4][Constant:                1 B] Used     3 times
+[                     ACTOR0PS2][Constant:                1 B] Used     3 times
+[                   TOTALSPAWNS][Constant:                1 B] Used     3 times
+[                           IPP][Constant:                1 B] Used     3 times
+[                TOTALSPAWNSPS2][Constant:                1 B] Used     3 times
+[                    SEQUENTIAL][Constant:                6 B] Used     3 times
+[                          SNA1][Constant:                1 B] Used     3 times
+[        BULLET_NORMAL_VELOCITY][Constant:                4 B] Used     3 times
+[          BULLET_BIRD_VELOCITY][Constant:                4 B] Used     3 times
+[    BULLET_ENEMY_BIRD_VELOCITY][Constant:                4 B] Used     3 times
+[          BULLET_NORMAL_DAMAGE][Constant:                4 B] Used     3 times
+[            BULLET_BIRD_DAMAGE][Constant:                4 B] Used     3 times
+[     BULLET_BIRDMISSILE_DAMAGE][Constant:                4 B] Used     3 times
+[                   MAXSTRENGTH][Constant:                4 B] Used     3 times
+[        PLAYERCAMERAHORZOFFSET][Constant:                4 B] Used     3 times
+[        PLAYERCAMERAVERTOFFSET][Constant:                4 B] Used     3 times
+[      PREVENTUSERCAMERACONTROL][Constant:                5 B] Used     3 times
+[        TIMETOREACHMAXSTRENGTH][Constant:                4 B] Used     3 times
+[                 TIMETOTURNOFF][Constant:                4 B] Used     3 times
+[                          ITYP][Constant:                1 B] Used     3 times
+[                          IID1][Constant:                1 B] Used     3 times
+[                          IID2][Constant:                1 B] Used     3 times
+[                           FGX][Constant:                4 B] Used     3 times
+[                           FGY][Constant:                4 B] Used     3 times
+[                           FWF][Constant:                4 B] Used     3 times
+[                           FWE][Constant:                4 B] Used     3 times
+[                           F_F][Constant:                1 B] Used     3 times
+[                          F_BD][Constant:                4 B] Used     3 times
+[                          F_ED][Constant:                4 B] Used     3 times
+[                           F_C][Constant:                1 B] Used     3 times
+[                           C_A][Constant:                4 B] Used     3 times
+[                        ACTOR0][Min:       0 B Max       1 B] Used     3 times
+[                ACTORQUANTITY0][Constant:                1 B] Used     3 times
+[                    ACTORNAME0][Constant:                1 B] Used     3 times
+[                     ACTOR1PS2][Constant:                1 B] Used     3 times
+[                ACTORQUANTITY1][Constant:                1 B] Used     3 times
+[                    ACTORNAME1][Constant:                1 B] Used     3 times
+[                     ACTOR2PS2][Constant:                1 B] Used     3 times
+[                    ACTORNAME2][Constant:                1 B] Used     3 times
+[                        ACTOR3][Constant:                1 B] Used     3 times
+[                     ACTOR3PS2][Constant:                1 B] Used     3 times
+[                  ACTORCHANCE3][Constant:                1 B] Used     3 times
+[                ACTORQUANTITY3][Constant:                1 B] Used     3 times
+[                    ACTORNAME3][Constant:                1 B] Used     3 times
+[                ACTORQUANTITY4][Constant:                1 B] Used     3 times
+[                    ACTORNAME4][Constant:                1 B] Used     3 times
+[                  WAITINTERVAL][Constant:                4 B] Used     3 times
+[                   FOLLOWSPATH][Constant:                6 B] Used     3 times
+[                        SETREG][Constant:                6 B] Used     3 times
+[                    WAVENUMBER][Constant:                1 B] Used     3 times
+[                          YFOV][Constant:                4 B] Used     3 times
+[                   XRESOLUTION][Constant:                2 B] Used     3 times
+[                   YRESOLUTION][Constant:                2 B] Used     3 times
+[             CINEMATICPRIORITY][Constant:                6 B] Used     2 times
+[                      SPOLNAME][Constant:               70 B] Used     2 times
+[                EXPLOSIVEARROW][Min:       0 B Max      61 B] Used     2 times
+[                    BASEWOBBLE][Constant:                4 B] Used     2 times
+[                     VISCOSITY][Constant:                4 B] Used     2 times
+[                  DROPPEDSOUND][Constant:                7 B] Used     2 times
+[                     DAMPENING][Constant:                4 B] Used     2 times
+[                   NORMALARROW][Min:       0 B Max      52 B] Used     2 times
+[                  CALLOUTSOUND][Constant:                6 B] Used     2 times
+[                 INITIALRIPPLE][Constant:                1 B] Used     2 times
+[                  MAXTHROWDIST][Constant:                4 B] Used     2 times
+[                    RANDWOBBLE][Constant:                4 B] Used     2 times
+[                   TESSELATION][Constant:                1 B] Used     2 times
+[                         MPART][Constant:                1 B] Used     2 times
+[                   MAXHOLDTIME][Constant:                4 B] Used     2 times
+[                  MINTHROWDIST][Constant:                4 B] Used     2 times
+[                  PERTURBATION][Constant:                4 B] Used     2 times
+[                 EXPLOSIONNAME][Constant:               53 B] Used     2 times
+[                      DISTANCE][Constant:                4 B] Used     2 times
+[                          ESZR][Constant:                4 B] Used     1 times
+[                  STANDDOWNAIS][Constant:                6 B] Used     1 times
+[              PREFERREDPICKUP5][Constant:                1 B] Used     1 times
+[                    NGFIRENAME][Constant:               58 B] Used     1 times
+[                           RZR][Constant:                4 B] Used     1 times
+[                         DMASS][Constant:                4 B] Used     1 times
+[                      INERTIAZ][Constant:                4 B] Used     1 times
+[                   DESCRIPTION][Constant:                1 B] Used     1 times
+[               LEVELEXITHEIGHT][Constant:                4 B] Used     1 times
+[                    ALERTSTATE][Constant:                1 B] Used     1 times
+[                   ALARMRADIUS][Constant:                4 B] Used     1 times
+[             PREFERREDWEAPON01][Constant:                1 B] Used     1 times
+[                          RKTP][Constant:                4 B] Used     1 times
+[                         V_MOV][Constant:                1 B] Used     1 times
+[                          AHRD][Constant:                4 B] Used     1 times
+[                         GDPUP][Constant:                4 B] Used     1 times
+[                         GDPDN][Constant:                4 B] Used     1 times
+[                        SAWMDT][Constant:                4 B] Used     1 times
+[                      GDTRNSPD][Constant:                4 B] Used     1 times
+[                       GDBNAME][Constant:               64 B] Used     1 times
+[                     USEREGION][Constant:                6 B] Used     1 times
+[ LEVELEXITDESTINATIONLEVELNAME][Constant:                1 B] Used     1 times
+[                       FALLOFF][Constant:                1 B] Used     1 times
+[                      ALERTAIS][Constant:                5 B] Used     1 times
+[                     ALARMTIME][Constant:                4 B] Used     1 times
+[                 FLAREPARTICLE][Constant:               49 B] Used     1 times
+[                          RKBY][Constant:                4 B] Used     1 times
+[                    DMIMDAMRAD][Constant:                4 B] Used     1 times
+[                          SKTY][Constant:                4 B] Used     1 times
+[                    DMEXACTRAD][Constant:                4 B] Used     1 times
+[                 STARTGASSOUND][Constant:                7 B] Used     1 times
+[                STANDDOWNSTATE][Constant:                1 B] Used     1 times
+[                      DMIMNAME][Constant:               58 B] Used     1 times
+[              PREFERREDPICKUP2][Constant:                1 B] Used     1 times
+[                      GDGASMED][Constant:               57 B] Used     1 times
+[                      INERTIAY][Constant:                4 B] Used     1 times
+[             PREFERREDWEAPON10][Constant:                1 B] Used     1 times
+[                      BOOMTIME][Constant:                4 B] Used     1 times
+[              WARCLUBRANGEDIST][Constant:                4 B] Used     1 times
+[                          RKBP][Constant:                4 B] Used     1 times
+[                     ABORTMODE][Constant:                7 B] Used     1 times
+[                        SUWDDS][Constant:                4 B] Used     1 times
+[        ACTOR_ANIM_TRANSITIONS][Constant:              184 B] Used     1 times
+[               SPARKLEPARTICLE][Constant:               52 B] Used     1 times
+[                    IDENTIFIER][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON08][Constant:                1 B] Used     1 times
+[                  LOOPGASSOUND][Constant:                7 B] Used     1 times
+[               CHARGEWAVESOUND][Constant:                7 B] Used     1 times
+[                  CASTSSHADOWS][Constant:                5 B] Used     1 times
+[                       SUNTYPE][Constant:                1 B] Used     1 times
+[                 BOREACTORNAME][Constant:               59 B] Used     1 times
+[                       REGIONS][Constant:                1 B] Used     1 times
+[                           FZR][Constant:                4 B] Used     1 times
+[                       HOLDMOD][Constant:                4 B] Used     1 times
+[             PREFERREDWEAPON05][Constant:                1 B] Used     1 times
+[                          SKBY][Constant:                4 B] Used     1 times
+[                          AHRR][Constant:                4 B] Used     1 times
+[              PREFERREDPICKUP1][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON00][Constant:                1 B] Used     1 times
+[                    GDGASSMALL][Constant:               55 B] Used     1 times
+[                    DMIMACTRAD][Constant:                4 B] Used     1 times
+[             PREFERREDWEAPON07][Constant:                1 B] Used     1 times
+[                          MMDS][Constant:              558 B] Used     1 times
+[                      INERTIAX][Constant:                4 B] Used     1 times
+[               GDGASSTREAMNAME][Constant:               55 B] Used     1 times
+[                  SPINFRICTION][Constant:                4 B] Used     1 times
+[                           SRZ][Constant:                4 B] Used     1 times
+[                   POISONARROW][Constant:               58 B] Used     1 times
+[                   RESPAWNTIME][Constant:                4 B] Used     1 times
+[                 BALLISTICNAME][Constant:               49 B] Used     1 times
+[                         V_ORD][Constant:                1 B] Used     1 times
+[                     PLATFORMS][Constant:                2 B] Used     1 times
+[                     DMEXPNAME][Constant:               66 B] Used     1 times
+[                       DMTMOUT][Constant:                4 B] Used     1 times
+[                    DMEXDAMRAD][Constant:                4 B] Used     1 times
+[                        DMIMTM][Constant:                4 B] Used     1 times
+[                 CROSSHAIRNAME][Constant:               65 B] Used     1 times
+[                  DMIMPTIMEOUT][Constant:                4 B] Used     1 times
+[                          MRSS][Constant:                4 B] Used     1 times
+[                         PITCH][Constant:                4 B] Used     1 times
+[             PREFERREDWEAPON06][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON02][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON03][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON04][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON09][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON11][Constant:                1 B] Used     1 times
+[             PREFERREDWEAPON12][Constant:                1 B] Used     1 times
+[                     SHELLNAME][Constant:               54 B] Used     1 times
+[                    RIDERPOINT][Constant:               11 B] Used     1 times
+[                          UCOG][Constant:                6 B] Used     1 times
+[                          ROLL][Constant:                4 B] Used     1 times
+[               CHARGEFULLSOUND][Constant:                7 B] Used     1 times
+[                        FTNAME][Constant:               62 B] Used     1 times
+[              GRAPPLEIDLESOUND][Constant:                7 B] Used     1 times
+[                     GDMOVESPD][Constant:                4 B] Used     1 times
+[                      GDJMPSPD][Constant:                4 B] Used     1 times
+[                         GDFOV][Constant:                4 B] Used     1 times
+[                    GDBOMBNAME][Constant:               47 B] Used     1 times
+[                    GDGASLARGE][Constant:               55 B] Used     1 times
+[                 MINSTATICDIST][Constant:                4 B] Used     1 times
+[                        CUTOFF][Constant:                4 B] Used     1 times
+[                      BOMBMODE][Constant:                7 B] Used     1 times
+[                           YAW][Constant:                4 B] Used     1 times
+[                       GASMODE][Constant:                7 B] Used     1 times
+[                      LUREMODE][Constant:                7 B] Used     1 times
+[                     LURESOUND][Constant:                7 B] Used     1 times
+[                   ENDGASSOUND][Constant:                7 B] Used     1 times
+[                  COLLIDESOUND][Constant:                5 B] Used     1 times
+[               LEVELEXITRADIUS][Constant:                4 B] Used     1 times
+[                     SPINSOUND][Constant:                7 B] Used     1 times
+[                     RIDERNAME][Constant:               56 B] Used     1 times
+[              PREFERREDPICKUP3][Constant:                1 B] Used     1 times
+[              PREFERREDPICKUP4][Constant:                1 B] Used     1 times
+[                        RANDOM][Constant:                6 B] Used     1 times
+[                       NGTMOUT][Constant:                4 B] Used     1 times
+[                     SHOWZONES][Constant:                6 B] Used     1 times
+[                     LASTSTAGE][Constant:                6 B] Used     1 times
+[                          SUWD][Constant:                4 B] Used     1 times
+[                        SUWMDT][Constant:                4 B] Used     1 times
+[                          SUWC][Constant:                4 B] Used     1 times
+[                          SAWC][Constant:                4 B] Used     1 times
+[                         FIDMT][Constant:                4 B] Used     1 times
+[                          FIDC][Constant:                4 B] Used     1 times
+[                         SAWSS][Constant:                4 B] Used     1 times
+[                           LZR][Constant:                4 B] Used     1 times
+[                           SLZ][Constant:                4 B] Used     1 times
+[                          MDMG][Constant:                4 B] Used     1 times
+[                           FOV][Constant:                4 B] Used     1 times
+[                   LOCKONSOUND][Constant:                7 B] Used     1 times
+[                          SKTP][Constant:                4 B] Used     1 times
+[                          RKTY][Constant:                4 B] Used     1 times
+[                          SKBP][Constant:                4 B] Used     1 times
+[                     SMEXPNAME][Constant:               67 B] Used     1 times
+[                       ARMTIME][Constant:                4 B] Used     1 times
+[                        RADIUS][Constant:                4 B] Used     1 times
+[                        IMPPWR][Constant:                4 B] Used     1 times
+[                        UDMASS][Constant:                5 B] Used     1 times
+[                          TDAM][Constant:                4 B] Used     1 times
+[                          DDEN][Constant:                1 B] Used     1 times
+[                         V_RPT][Constant:                1 B] Used     1 times
+[                         V_DEL][Constant:                5 B] Used     1 times
+
+Analyzing block type:                     RELAXDELAY: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                          V_DEL: Unsure...
+Analyzing block type:                          V_RPT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           DDEN: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                           TDAM: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                         UDMASS: Unsure...
+Analyzing block type:                         IMPPWR: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                         RADIUS: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                       DISTANCE: float32: Min: 5.000000 Max 100.000000.
+Analyzing block type:                        ARMTIME: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                      SMEXPNAME: Unsure...
+Analyzing block type:                           SKBP: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                           RKTY: float32: Min: 0.010000 Max 0.010000.
+Analyzing block type:                           SKTP: float32: Min: 3.250000 Max 3.250000.
+Analyzing block type:                    LOCKONSOUND: Unsure...
+Analyzing block type:                        MAXTURN: float32: Min: 0.200000 Max 0.700000.
+Analyzing block type:                  EXPLOSIONNAME: Unsure...
+Analyzing block type:                            FOV: float32: Min: 120.000000 Max 120.000000.
+Analyzing block type:                           MDMG: float32: Min: 50.000000 Max 50.000000.
+Analyzing block type:                    YRESOLUTION: int16: Min: 256 Max 256 (0x100 to 0x100).
+Analyzing block type:                    XRESOLUTION: int16: Min: 256 Max 256 (0x100 to 0x100).
+Analyzing block type:                            SLZ: float32: Min: 4.000000 Max 4.000000.
+Analyzing block type:                            LZR: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                          SAWSS: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                           FIDC: float32: Min: 0.000001 Max 0.000001.
+Analyzing block type:                          FIDMT: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                           SAWC: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                           SUWC: int32: Min: 0 Max 0.
+Analyzing block type:                         SUWMDT: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                           SUWD: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                      LASTSTAGE: Unsure...
+Analyzing block type:                      SHOWZONES: Unsure...
+Analyzing block type:                        NGTMOUT: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                         RANDOM: Unsure...
+Analyzing block type:               PREFERREDPICKUP4: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:               PREFERREDPICKUP3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      RIDERNAME: Unsure...
+Analyzing block type:                      SPINSOUND: Unsure...
+Analyzing block type:                LEVELEXITRADIUS: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                   COLLIDESOUND: Unsure...
+Analyzing block type:                    ENDGASSOUND: Unsure...
+Analyzing block type:                      LURESOUND: Unsure...
+Analyzing block type:                       LUREMODE: Unsure...
+Analyzing block type:                           YFOV: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:                        GASMODE: Unsure...
+Analyzing block type:                            YAW: int32: Min: 0 Max 0.
+Analyzing block type:                       BOMBMODE: Unsure...
+Analyzing block type:                         CUTOFF: float32: Min: 75.000000 Max 75.000000.
+Analyzing block type:                  MINSTATICDIST: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                     GDGASLARGE: Unsure...
+Analyzing block type:                     GDBOMBNAME: Unsure...
+Analyzing block type:                          GDFOV: float32: Min: 95.000000 Max 95.000000.
+Analyzing block type:                       GDJMPSPD: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                      GDMOVESPD: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:               GRAPPLEIDLESOUND: Unsure...
+Analyzing block type:                   PERTURBATION: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                         FTNAME: Unsure...
+Analyzing block type:                      MODEFLAGS: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                        OFFSETZ: float32: Min: -2.000000 Max 0.000000.
+Analyzing block type:                        OFFSETX: int32: Min: 0 Max 0.
+Analyzing block type:                     WAVENUMBER: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                CHARGEFULLSOUND: Unsure...
+Analyzing block type:                         SETREG: Unsure...
+Analyzing block type:                    FOLLOWSPATH: Unsure...
+Analyzing block type:                   WAITINTERVAL: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:                     ACTORNAME4: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                 ACTORQUANTITY4: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                     ACTORNAME3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                 ACTORQUANTITY3: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                           ROLL: int32: Min: 0 Max 0.
+Analyzing block type:                   ACTORCHANCE3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      ACTOR3PS2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         ACTOR3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     ACTORNAME2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      ACTOR2PS2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     ACTORNAME1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           UCOG: Unsure...
+Analyzing block type:                 ACTORQUANTITY1: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                      ACTOR1PS2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     ACTORNAME0: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                 ACTORQUANTITY0: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                         ACTOR0: Unsure...
+Analyzing block type:                  SPECULARCOLOR: Unsure...
+Analyzing block type:                      USERMODES: Unsure...
+Analyzing block type:                          VBSPD: float32: Min: 1.000000 Max 2.000000.
+Analyzing block type:                        OFFZMAX: float32: Min: -175.000000 Max 250.000000.
+Analyzing block type:                        OFFZMIN: float32: Min: -75.000000 Max 50.000000.
+Analyzing block type:                           OFFY: float32: Min: 0.000000 Max 20.000000.
+Analyzing block type:                           OFFX: float32: Min: 0.000000 Max 20.000000.
+Analyzing block type:                          EXSPD: float32: Min: 20.000000 Max 40.000000.
+Analyzing block type:                     RIDERPOINT: Unsure...
+Analyzing block type:                           OPSD: Unsure...
+Analyzing block type:                         TAUPDT: float32: Min: 0.100000 Max 3.000000.
+Analyzing block type:                         TARGAN: Byte: Min: 45 Max 75 (0x2D to 0x4B).
+Analyzing block type:                        SHOOTFR: float32: Min: 0.000000 Max 0.250000.
+Analyzing block type:                   CAPTURESOUND: Unsure...
+Analyzing block type:                  DROPPEDSOUND1: Unsure...
+Analyzing block type:                      SHELLNAME: Unsure...
+Analyzing block type:              PREFERREDWEAPON12: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:              PREFERREDWEAPON11: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:              PREFERREDWEAPON09: Byte: Min: 3 Max 3 (0x3 to 0x3).
+Analyzing block type:              PREFERREDWEAPON04: Byte: Min: 8 Max 8 (0x8 to 0x8).
+Analyzing block type:              PREFERREDWEAPON03: Byte: Min: 9 Max 9 (0x9 to 0x9).
+Analyzing block type:              PREFERREDWEAPON02: Byte: Min: 6 Max 6 (0x6 to 0x6).
+Analyzing block type:              PREFERREDWEAPON06: Byte: Min: 6 Max 6 (0x6 to 0x6).
+Analyzing block type:                            C_A: float32: Min: 0.040000 Max 0.040000.
+Analyzing block type:                          PITCH: int32: Min: 0 Max 0.
+Analyzing block type:                            F_C: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           F_ED: int32: Min: 0 Max 0.
+Analyzing block type:                           F_BD: int32: Min: 0 Max 0.
+Analyzing block type:                            F_F: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                            FWE: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                            FWF: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                            FGY: float32: Min: -1.000000 Max -1.000000.
+Analyzing block type:                            FGX: int32: Min: 0 Max 0.
+Analyzing block type:                           MRSS: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                           IID2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           IID1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           ITYP: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                   DMIMPTIMEOUT: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                  CROSSHAIRNAME: Unsure...
+Analyzing block type:                         DMIMTM: float32: Min: 0.700000 Max 0.700000.
+Analyzing block type:                     DMEXDAMRAD: float32: Min: 18.000000 Max 18.000000.
+Analyzing block type:                        DMTMOUT: int32: Min: 0 Max 0.
+Analyzing block type:                      DMEXPNAME: Unsure...
+Analyzing block type:                   MINTHROWDIST: float32: Min: 5.000000 Max 8.501000.
+Analyzing block type:                    MAXHOLDTIME: float32: Min: 2.000000 Max 2.010000.
+Analyzing block type:                      PLATFORMS: int16: Min: 256 Max 256 (0x100 to 0x100).
+Analyzing block type:                          MPART: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  TIMETOTURNOFF: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:         TIMETOREACHMAXSTRENGTH: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:       PREVENTUSERCAMERACONTROL: Unsure...
+Analyzing block type:                          V_ORD: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  BALLISTICNAME: Unsure...
+Analyzing block type:         PLAYERCAMERAVERTOFFSET: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:         PLAYERCAMERAHORZOFFSET: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                    MAXSTRENGTH: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:      BULLET_BIRDMISSILE_DAMAGE: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:             BULLET_BIRD_DAMAGE: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:           BULLET_NORMAL_DAMAGE: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:     BULLET_ENEMY_BIRD_VELOCITY: float32: Min: 400.000000 Max 400.000000.
+Analyzing block type:           BULLET_BIRD_VELOCITY: float32: Min: 150.000000 Max 150.000000.
+Analyzing block type:                    RESPAWNTIME: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                    POISONARROW: Unsure...
+Analyzing block type:         BULLET_NORMAL_VELOCITY: float32: Min: 25.000000 Max 25.000000.
+Analyzing block type:                  EASYAIMRADIUS: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:               JUMPLANDHEAVYSND: Unsure...
+Analyzing block type:             DEATHSWARMBOREDSND: Unsure...
+Analyzing block type:             PAINPOISONCHOKESND: Unsure...
+Analyzing block type:                   PAINLIGHTSND: Unsure...
+Analyzing block type:                       CLIMBSND: Unsure...
+Analyzing block type:                     FALLINGSND: Unsure...
+Analyzing block type:                  DROWNDEATHSND: Unsure...
+Analyzing block type:                            SRZ: float32: Min: 4.000000 Max 4.000000.
+Analyzing block type:            WATERSURFACEGOODSND: Unsure...
+Analyzing block type:                   EXITWATERSND: Unsure...
+Analyzing block type:              UNDERWATERSWIMSND: Unsure...
+Analyzing block type:                 SURFACESWIMSND: Unsure...
+Analyzing block type:                        TURNSND: Unsure...
+Analyzing block type:                         JMPSND: Unsure...
+Analyzing block type:                        FOOTSND: Unsure...
+Analyzing block type:              FLTMISSILEFIRESND: Unsure...
+Analyzing block type:                FLTNOMISSILESND: Unsure...
+Analyzing block type:                FLTWATERSKIMSND: Unsure...
+Analyzing block type:                 FLTHITWORLDSND: Unsure...
+Analyzing block type:                   FLTLOCKONSND: Unsure...
+Analyzing block type:                    FLTSPEEDSND: Unsure...
+Analyzing block type:                   SPINFRICTION: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                    FLTRIGHTSND: Unsure...
+Analyzing block type:                     FLTLEFTSND: Unsure...
+Analyzing block type:                GDGASSTREAMNAME: Unsure...
+Analyzing block type:                   PT_CAMLPROLL: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                       INERTIAX: int32: Min: 0 Max 0.
+Analyzing block type:                  PT_CAMLYEYOFF: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                      PT_CAMLEL: float32: Min: 2.500000 Max 3.000000.
+Analyzing block type:                     PT_CAMLCLA: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                     PT_CAM3EAC: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                      PT_CAM3EL: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                     PT_CAM3ETB: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                     PT_CAM3FOV: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:                           MMDS: Unsure...
+Analyzing block type:                   PT_CAM1CROLL: float32: Min: 0.000000 Max 0.650000.
+Analyzing block type:                  PT_RIDERPOINT: Unsure...
+Analyzing block type:                   PT_RIDERNAME: Unsure...
+Analyzing block type:              PREFERREDWEAPON07: Byte: Min: 5 Max 5 (0x5 to 0x5).
+Analyzing block type:                          FLEXF: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                    PT_WEAMGDMG: float32: Min: 100.000000 Max 200.000000.
+Analyzing block type:                    PT_WEAMSSPD: float32: Min: 100.000000 Max 200.000000.
+Analyzing block type:                    PT_FREDVACC: float32: Min: 0.750000 Max 3.000000.
+Analyzing block type:                     AMMOAMOUNT: Byte: Min: 0 Max 75 (0x0 to 0x4B).
+Analyzing block type:                       BASEXFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                   PT_FRFGDNBLN: float32: Min: 2.500000 Max 2.500000.
+Analyzing block type:                  BACKPITCHCORR: float32: Min: 0.000000 Max 15.000000.
+Analyzing block type:                   PT_FRFGUPBLN: float32: Min: 2.500000 Max 2.500000.
+Analyzing block type:                    MAXRUNSPEED: float32: Min: 8.000000 Max 16.000000.
+Analyzing block type:                  PT_FRFGDNAMNT: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                   PT_FRFGDNSPD: float32: Min: 0.250000 Max 2.500000.
+Analyzing block type:                     PT_CAM1FOV: float32: Min: 50.000000 Max 75.000000.
+Analyzing block type:                   PT_FRFGUPSPD: float32: Min: 0.400000 Max 2.500000.
+Analyzing block type:                      PT_FRVDMP: float32: Min: 0.950000 Max 0.950000.
+Analyzing block type:                     DMIMACTRAD: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                      PT_FRHDMP: float32: Min: 0.950000 Max 0.950000.
+Analyzing block type:                           AS_S: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      PT_FRUACC: float32: Min: 1.600000 Max 4.000000.
+Analyzing block type:                        TARGERR: float32: Min: 0.000000 Max 5.000000.
+Analyzing block type:                      PT_FRHACC: float32: Min: 0.350000 Max 3.000000.
+Analyzing block type:                     PT_FRSDMIN: float32: Min: 0.400000 Max 2.000000.
+Analyzing block type:                       PT_ACSTN: float32: Min: 10.000000 Max 20.000000.
+Analyzing block type:                     GDGASSMALL: Unsure...
+Analyzing block type:                       PT_WOSTN: float32: Min: 5.000000 Max 30.000000.
+Analyzing block type:                           SNA1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   HEALTHAMOUNT: float32: Min: 0.000000 Max 50.000000.
+Analyzing block type:                 GRAVITYFACTORX: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                       PT_WODAM: float32: Min: 25.000000 Max 34.000000.
+Analyzing block type:                         RELROT: Unsure...
+Analyzing block type:   STERACOSAUR_DASHRECHARGETIME: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                    TESSELATION: Byte: Min: 128 Max 128 (0x80 to 0x80).
+Analyzing block type:          STERACOSAUR_DASHSPEED: float32: Min: 18.000000 Max 18.000000.
+Analyzing block type:                  NEARTIPYAWMIN: float32: Min: -30.000000 Max -30.000000.
+Analyzing block type:     STERACOSAUR_CAMERADISTANCE: float32: Min: 8.000000 Max 10.000000.
+Analyzing block type:       STERACOSAUR_CAMERAHEIGHT: float32: Min: 3.000000 Max 5.000000.
+Analyzing block type:            RAPTOR_JUMPVELOCITY: float32: Min: 15.000000 Max 15.000000.
+Analyzing block type:                 NEARTIPYAWAXIS: Byte: Min: 3 Max 5 (0x3 to 0x5).
+Analyzing block type:             RAPTOR_MAXRUNSPEED: float32: Min: 14.000000 Max 14.000000.
+Analyzing block type:                    CLIMB_DECEL: float32: Min: 0.200000 Max 0.200000.
+Analyzing block type:                        OVERSAG: int32: Min: 0 Max 0.
+Analyzing block type:                           A_FL: Byte: Min: 0 Max 4 (0x0 to 0x4).
+Analyzing block type:                    CLIMB_ACCEL: float32: Min: 0.800000 Max 0.800000.
+Analyzing block type:                    DROWNDAMAGE: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                  DROWNINTERVAL: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:               DROWNINITIALTIME: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                      SWIMSPEED: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:             FALLDAMAGEMAXSPEED: float32: Min: 80.000000 Max 80.000000.
+Analyzing block type:           MAXCROUCHSTRAFESPEED: float32: Min: 3.000000 Max 8.000000.
+Analyzing block type:                   JUMPVELOCITY: float32: Min: 12.000000 Max 30.000000.
+Analyzing block type:                  AMMOUPG2SLOT4: Unsure...
+Analyzing block type:            MAXGUIDEDDEVICEAMMO: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                 MAXGRENADEAMMO: Byte: Min: 0 Max 10 (0x0 to 0xA).
+Analyzing block type:                MAXLAUNCHERAMMO: Byte: Min: 0 Max 4 (0x0 to 0x4).
+Analyzing block type:                 MAXMINIGUNAMMO: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:                 MAXSHOTGUNAMMO: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                  MAXPISTOLAMMO: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:                  SPEEDOFFSOUND: Unsure...
+Analyzing block type:                 ENTERRAGESOUND: Unsure...
+Analyzing block type:                 JUMPBOOTSSOUND: Unsure...
+Analyzing block type:                  EWFLASHCHANCE: Byte: Min: 0 Max 10 (0x0 to 0xA).
+Analyzing block type:             POISONRECOVERSOUND: Unsure...
+Analyzing block type:                     TAUNTSOUND: Unsure...
+Analyzing block type:            CLOAKINGBELTONSOUND: Unsure...
+Analyzing block type:              DEATHHELMOFFSOUND: Unsure...
+Analyzing block type:                     SEQUENTIAL: Unsure...
+Analyzing block type:               DEATHHELMONSOUND: Unsure...
+Analyzing block type:              SHIELDDAMAGESOUND: Unsure...
+Analyzing block type:              SHIELDACTIVESOUND: Unsure...
+Analyzing block type:                       SNAPSHOT: Unsure...
+Analyzing block type:                  AMMOUPG2SLOT7: Unsure...
+Analyzing block type:                 TOTALSPAWNSPS2: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                  AMMOUPG0SLOT7: Unsure...
+Analyzing block type:                            IPP: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                         RSPWNT: float32: Min: -1.000000 Max 40.000000.
+Analyzing block type:                  UPGRADE1SLOT7: Unsure...
+Analyzing block type:                  GREENTEAMMESH: Unsure...
+Analyzing block type:              BOUNCERELATIVETO2: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                    WEAPONSLOT7: Unsure...
+Analyzing block type:                  AMMOUPG2SLOT6: Unsure...
+Analyzing block type:                    USEPRIMARY5: Unsure...
+Analyzing block type:                         STSPDR: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                      EYEHEIGHT: float32: Min: 0.400000 Max 2.250000.
+Analyzing block type:                  AMMOUPG1SLOT6: Unsure...
+Analyzing block type:           STARTSOFFWITHWEAPON6: Unsure...
+Analyzing block type:                  ENTERWATERSND: Unsure...
+Analyzing block type:                  UPGRADE2SLOT6: Unsure...
+Analyzing block type:                     PT_CAM3LAL: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                   BACKPITCHMIN: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                    WEAPONSLOT6: Unsure...
+Analyzing block type:              POSITIONYUPGRADE2: int32: Min: 0 Max 0.
+Analyzing block type:                    WEAPONSLOT5: Unsure...
+Analyzing block type:                   RAGEENDSOUND: Unsure...
+Analyzing block type:                  AMMOUPG1SLOT4: Unsure...
+Analyzing block type:                         W_YLAY: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                     RANDWOBBLE: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                  AMMOUPG0SLOT4: Unsure...
+Analyzing block type:                    TOTALSPAWNS: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                  UPGRADE2SLOT4: Unsure...
+Analyzing block type:                       HEADZFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                    WEAPONSLOT4: Unsure...
+Analyzing block type:              PREFERREDWEAPON00: Byte: Min: 5 Max 5 (0x5 to 0x5).
+Analyzing block type:           STARTSOFFWITHWEAPON3: Unsure...
+Analyzing block type:               PREFERREDPICKUP1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  UPGRADE2SLOT3: Unsure...
+Analyzing block type:           CLOAKINGBELTOFFSOUND: Unsure...
+Analyzing block type:                    WEAPONSLOT3: Unsure...
+Analyzing block type:                  UPGRADE2SLOT2: Unsure...
+Analyzing block type:       LOGICINITIALATTACKCHANCE: Byte: Min: 0 Max 10 (0x0 to 0xA).
+Analyzing block type:                  UPGRADE1SLOT2: Unsure...
+Analyzing block type:                     TIPTORQUEZ: int32: Min: 0 Max 0.
+Analyzing block type:                  AMMOUPG2SLOT1: Unsure...
+Analyzing block type:                         FDMULT: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                  UPGRADE2SLOT5: Unsure...
+Analyzing block type:                   MAXTHROWDIST: float32: Min: 12.000000 Max 30.000999.
+Analyzing block type:                     PT_FRSDMAX: float32: Min: 1.000000 Max 8.000000.
+Analyzing block type:                  AMMOUPG0SLOT1: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:              RAPTOR_EYEZOFFSET: int32: Min: 0 Max 0.
+Analyzing block type:           STARTSOFFWITHWEAPON1: Unsure...
+Analyzing block type:                  PAINMEDIUMSND: Unsure...
+Analyzing block type:                  UPGRADE2SLOT1: Unsure...
+Analyzing block type:                ACCESSORYPOINT2: Unsure...
+Analyzing block type:                          W_FSX: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                  UPGRADE1SLOT1: Unsure...
+Analyzing block type:                         SPINTF: int32: Min: 0 Max 0.
+Analyzing block type:                    WEAPONSLOT1: Unsure...
+Analyzing block type:            TWOHANDEDWEAPONBASE: Unsure...
+Analyzing block type:                  AMMOUPG1SLOT0: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:           STARTSOFFWITHWEAPON0: Unsure...
+Analyzing block type:                    WEAPONSLOT0: Unsure...
+Analyzing block type:                    ADDGRAVITYZ: int32: Min: 0 Max 0.
+Analyzing block type:                    ADDGRAVITYY: int32: Min: 0 Max 0.
+Analyzing block type:                    ADDGRAVITYX: int32: Min: 0 Max 0.
+Analyzing block type:                        BOUNCEX: int32: Min: 0 Max 0.
+Analyzing block type:                 GRAVITYFACTORY: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                    PATHINFIELD: int32: Min: 0 Max 0.
+Analyzing block type:                       PSMONOFF: Unsure...
+Analyzing block type:                  CIRCULARRAMPX: int32: Min: 0 Max 0.
+Analyzing block type:                 CIRCULARFIELDZ: int32: Min: 0 Max 0.
+Analyzing block type:             CIRCULARISRELATIVE: Unsure...
+Analyzing block type:                  INITIALRIPPLE: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                 CIRCULAREFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    PLANARRAMPY: int32: Min: 0 Max 0.
+Analyzing block type:                           AHRR: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                   PLANARFIELDY: int32: Min: 0 Max 0.
+Analyzing block type:                           SKBY: int32: Min: 0 Max 0.
+Analyzing block type:               PLANARISRELATIVE: Unsure...
+Analyzing block type:                   PLANAREFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      PATHINISH: Unsure...
+Analyzing block type:                     AXIALRAMPY: int32: Min: 0 Max 0.
+Analyzing block type:                    AXIALFIELDY: int32: Min: 0 Max 0.
+Analyzing block type:                        LDSOUND: Unsure...
+Analyzing block type:                    POINTEFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   LINEARFIELDZ: int32: Min: 0 Max 0.
+Analyzing block type:               LINEARISRELATIVE: Unsure...
+Analyzing block type:                         TURNON: Unsure...
+Analyzing block type:                           R_NP: int32: Min: 0 Max 0.
+Analyzing block type:                           DRAG: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                 LIGHTINTENSITY: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                       CANCRAWL: Unsure...
+Analyzing block type:                           R_AT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      ACTOR0PS2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:    MUZZLERIDINGYFACTORUPGRADE2: float32: Min: 0.100000 Max 0.100000.
+Analyzing block type:    MUZZLERIDINGXFACTORUPGRADE2: float32: Min: 0.100000 Max 0.100000.
+Analyzing block type:                      POINTRAMP: int32: Min: 0 Max 0.
+Analyzing block type:              PREFERREDWEAPON05: Byte: Min: 7 Max 7 (0x7 to 0x7).
+Analyzing block type:                AXIALISRELATIVE: Unsure...
+Analyzing block type:                  SCALEUPGRADE2: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:              POSITIONZUPGRADE2: float32: Min: -1.500000 Max -1.500000.
+Analyzing block type:                   PT_FRSDSTART: float32: Min: 0.600000 Max 4.500000.
+Analyzing block type:              POSITIONXUPGRADE2: int32: Min: 0 Max 0.
+Analyzing block type:              PATHRELEASE2SPEED: float32: Min: -1.000000 Max 0.000000.
+Analyzing block type:                  UPGRADE1SLOT0: Unsure...
+Analyzing block type:       USABLEUNDERWATERUPGRADE2: Unsure...
+Analyzing block type:                         TSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                         SPINAY: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:             WEAPONNAMEUPGRADE2: Unsure...
+Analyzing block type:                  GAGROUPATTACK: Unsure...
+Analyzing block type:                   SPEEDONSOUND: Unsure...
+Analyzing block type:        AMMOUSEDPERSHOTUPGRADE1: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                 YELLOWTEAMMESH: Unsure...
+Analyzing block type:                         ACTOR4: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          W_SUB: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:           CLIMB_HORIZVIEWANGLE: float32: Min: 120.000000 Max 120.000000.
+Analyzing block type:                  SCALEUPGRADE1: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:              POSITIONZUPGRADE1: float32: Min: -1.500000 Max -1.500000.
+Analyzing block type:                   ACTORCHANCE4: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     HEADYAWMIN: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:              POSITIONXUPGRADE1: int32: Min: 0 Max 0.
+Analyzing block type:                  DEATHSHORTSND: Unsure...
+Analyzing block type:                         SMTYPE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:             WEAPONTYPEUPGRADE1: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                  UPGRADE1SLOT5: Unsure...
+Analyzing block type:                 CIRCULARFIELDX: int32: Min: 0 Max 0.
+Analyzing block type:                  BACKBONEINDEX: Byte: Min: 5 Max 255 (0x5 to 0xFF).
+Analyzing block type:        TWOHANDEDWEAPONUPGRADE1: Unsure...
+Analyzing block type:       USABLEUNDERWATERUPGRADE1: Unsure...
+Analyzing block type:                          STSPD: float32: Min: 0.000000 Max 1.500000.
+Analyzing block type:                  XROTATIONBONE: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:             WEAPONNAMEUPGRADE1: Unsure...
+Analyzing block type:        MUZZLERIDINGXFACTORBASE: float32: Min: 0.000000 Max 0.100000.
+Analyzing block type:                       HEADXFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                     PLAYERTYPE: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                    USEPRIMARY1: Unsure...
+Analyzing block type:            AMMOUSEDPERSHOTBASE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                  POSITIONYBASE: float32: Min: -0.200000 Max 0.000000.
+Analyzing block type:                  POSITIONXBASE: float32: Min: 0.000000 Max 0.780000.
+Analyzing block type:         USABLEWHENCLIMBINGBASE: Unsure...
+Analyzing block type:                         ACTOR2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:               RAPTOR_EYEHEIGHT: float32: Min: 2.000000 Max 3.000000.
+Analyzing block type:                         MPSMID: float32: Min: 25.000000 Max 50.000000.
+Analyzing block type:                 WEAPONNAMEBASE: Unsure...
+Analyzing block type:                         WEAPON: Byte: Min: 0 Max 13 (0x0 to 0xD).
+Analyzing block type:                          LTARG: Unsure...
+Analyzing block type:                        HOLDMOD: float32: Min: 0.500000 Max 0.500000.
+Analyzing block type:                   FLAPBEHAVIOR: Byte: Min: 1 Max 3 (0x1 to 0x3).
+Analyzing block type:                    FLYINGHOVER: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                    FLIGHTSPEED: float32: Min: 1.000000 Max 75.000000.
+Analyzing block type:                    EVADEDAMAGE: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                       BIRDFORM: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                    PT_FREDHACC: float32: Min: 1.000000 Max 6.000000.
+Analyzing block type:                       TEAMNAME: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                      FREEPATHY: Unsure...
+Analyzing block type:                  ALTERNATETYPE: Unsure...
+Analyzing block type:                          W_DSY: int32: Min: 0 Max 0.
+Analyzing block type:                            FZR: float32: Min: 3.750000 Max 3.750000.
+Analyzing block type:                       DRYCLICK: Unsure...
+Analyzing block type:                          W_DSC: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                            W_T: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    PROVOKEONLY: Unsure...
+Analyzing block type:                          W_THI: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     PICKUPTYPE: Byte: Min: 1 Max 56 (0x1 to 0x38).
+Analyzing block type:                          W_TMN: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:               POISONDEATHSOUND: Unsure...
+Analyzing block type:                     FOLLOWDIST: float32: Min: 6.000000 Max 6.000000.
+Analyzing block type:                          W_TMF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          W_FON: Unsure...
+Analyzing block type:                          SPEED: float32: Min: 0.300000 Max 20.000000.
+Analyzing block type:                        REGIONS: Byte: Min: 128 Max 128 (0x80 to 0x80).
+Analyzing block type:                  AFFECTSTARGET: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:              POISONDAMAGESOUND: Unsure...
+Analyzing block type:                    AXIALEFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                       KEEPADIS: Unsure...
+Analyzing block type:                           W_BM: Unsure...
+Analyzing block type:                         STATUS: Unsure...
+Analyzing block type:                           W_WC: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  BOREACTORNAME: Unsure...
+Analyzing block type:                     ACTOR_CODE: Unsure...
+Analyzing block type:                 WEAPONTYPEBASE: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                         STSAMN: float32: Min: 0.000000 Max 0.370000.
+Analyzing block type:                        STFRSPD: float32: Min: 0.000000 Max 0.070000.
+Analyzing block type:                         STFSPD: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                        SUNTYPE: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         STFALL: Unsure...
+Analyzing block type:                     PT_CAMLETB: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                          LINKS: Unsure...
+Analyzing block type:                          STCHS: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                        SPINCEX: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                 BODYPARTPREFIX: Unsure...
+Analyzing block type:                   WEAPONPOINT2: Unsure...
+Analyzing block type:                SWITCHCOLLISION: Unsure...
+Analyzing block type:                   CASTSSHADOWS: Unsure...
+Analyzing block type:                  AMMOUPG2SLOT5: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:                    CANTELEPORT: Unsure...
+Analyzing block type:                        CREVADE: Unsure...
+Analyzing block type:                CHARGEWAVESOUND: Unsure...
+Analyzing block type:                  AMMOUPG0SLOT3: Unsure...
+Analyzing block type:                   LOOPGASSOUND: Unsure...
+Analyzing block type:              PREFERREDWEAPON08: Byte: Min: 4 Max 4 (0x4 to 0x4).
+Analyzing block type:                    EVADEATTACK: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                   EVADEACQUIRE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                   ASSAULTFRONT: Unsure...
+Analyzing block type:                 MAXASSAULTDIST: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                        PT_FRGR: float32: Min: 0.050000 Max 0.050000.
+Analyzing block type:                TORSOFLINCHBONE: Byte: Min: 3 Max 255 (0x3 to 0xFF).
+Analyzing block type:                       CALLSOUT: Unsure...
+Analyzing block type:                   RESPAWNSOUND: Unsure...
+Analyzing block type:                     BASEYAWMIN: float32: Min: -180.000000 Max -180.000000.
+Analyzing block type:                    GAGROUPNAME: Unsure...
+Analyzing block type:                              Z: int32: Min: 0 Max 0.
+Analyzing block type:                LEASHEDTOREGION: Unsure...
+Analyzing block type:                              X: int32: Min: 0 Max 0.
+Analyzing block type:                     IDENTIFIER: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    DANCEAMOUNT: float32: Min: 1.000000 Max 3.000000.
+Analyzing block type:                   LOCKEDSTATUS: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                     DOORSTATUS: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                        SPINSTZ: float32: Min: 0.000000 Max 8500.000000.
+Analyzing block type:              MAXTECHWEAPONAMMO: Byte: Min: 0 Max 4 (0x0 to 0x4).
+Analyzing block type:                        EADHEAD: Unsure...
+Analyzing block type:    MUZZLERIDINGXFACTORUPGRADE1: float32: Min: 0.100000 Max 0.100000.
+Analyzing block type:                       ISSNIPER: Unsure...
+Analyzing block type:                          SCALE: Unsure...
+Analyzing block type:              SPAWNACTOR4CHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:                         TIPRDX: float32: Min: 0.000000 Max 3.000000.
+Analyzing block type:                SPARKLEPARTICLE: Unsure...
+Analyzing block type:              SPAWNACTOR3CHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:              SPAWNACTOR1CHANCE: Byte: Min: 10 Max 100 (0xA to 0x64).
+Analyzing block type:                        WADESND: Unsure...
+Analyzing block type:                      IGNORENAV: Unsure...
+Analyzing block type:            AMMOPERCLIPUPGRADE2: Byte: Min: 5 Max 5 (0x5 to 0x5).
+Analyzing block type:            SPAWNACTOR5VELOCITY: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:             FALLDAMAGEMINSPEED: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:            SPAWNACTOR2VELOCITY: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                     BACKPPCORR: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                           W_BC: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   CALLOUTSOUND: Unsure...
+Analyzing block type:            SPAWNACTOR1VELOCITY: float32: Min: 2.000000 Max 3.000000.
+Analyzing block type:                    SPAWNACTOR5: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    SPAWNACTOR4: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    NORMALARROW: Unsure...
+Analyzing block type:                         SPINIZ: float32: Min: 0.000000 Max 300.000000.
+Analyzing block type:                    SPAWNACTOR3: Unsure...
+Analyzing block type:                      PT_WEAMGD: float32: Min: 0.150000 Max 0.250000.
+Analyzing block type:         ACTOR_ANIM_TRANSITIONS: Unsure...
+Analyzing block type:                    SPAWNACTOR2: Unsure...
+Analyzing block type:                      PT_FRDACC: float32: Min: 1.000000 Max 3.000000.
+Analyzing block type:                    SPAWNACTOR1: Unsure...
+Analyzing block type:                        HDSOUND: Unsure...
+Analyzing block type:                       SLOWTURN: Unsure...
+Analyzing block type:           STARTSOFFWITHWEAPON5: Unsure...
+Analyzing block type:                        TIPDOMZ: Unsure...
+Analyzing block type:                        MDSOUND: Unsure...
+Analyzing block type:                         SUWDDS: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:              ACTOR_TEXTURE_SET: Unsure...
+Analyzing block type:                USEHEADTRACKING: Unsure...
+Analyzing block type:                  DEFTRANSBLEND: float32: Min: 0.266667 Max 2.000000.
+Analyzing block type:                     HEADPYCORR: float32: Min: -90.000000 Max 90.000000.
+Analyzing block type:                     HEADPPCORR: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                 CIRCULARFIELDY: int32: Min: 0 Max 0.
+Analyzing block type:                         SAGDOM: Unsure...
+Analyzing block type:                            SGR: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      ACTOR4PS2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                       HEADYFIX: float32: Min: -90.000000 Max 180.000000.
+Analyzing block type:                 ATTACKONBREACH: Unsure...
+Analyzing block type:                   ACTIVESPAWNS: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                    ONLYPTARGET: Unsure...
+Analyzing block type:                   BREACHRADIUS: float32: Min: -1.000000 Max -1.000000.
+Analyzing block type:                            FGZ: int32: Min: 0 Max 0.
+Analyzing block type:                       CUUCOVER: Unsure...
+Analyzing block type:                    EWTHROWDIST: float32: Min: 40.000000 Max 50.000000.
+Analyzing block type:                          FLEER: float32: Min: 10.000000 Max 40.000000.
+Analyzing block type:                   CANTBEPUSHED: Unsure...
+Analyzing block type:                        AIAVOID: Unsure...
+Analyzing block type:                      DFTURRETS: Unsure...
+Analyzing block type:                     ALWAYSWALK: Unsure...
+Analyzing block type:                CANBESWARMBORED: Unsure...
+Analyzing block type:                       IGNALBOX: Unsure...
+Analyzing block type:                           SFRE: float32: Min: 0.050000 Max 1.000000.
+Analyzing block type:               AUTOTURRETRADIUS: float32: Min: 5.000000 Max 500.000000.
+Analyzing block type:                 CANMONKEYCLIMB: Unsure...
+Analyzing block type:                     TURRETTYPE: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                      ABORTMODE: Unsure...
+Analyzing block type:                           R_NK: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     PLAYERMODE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                VISIONEYEHEIGHT: float32: Min: 0.000000 Max 7.000000.
+Analyzing block type:                  YROTATIONBONE: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                    WEAPONSLOT2: Unsure...
+Analyzing block type:                 YROTATIONSPEED: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:                        TIPXFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                   MAXYROTATION: float32: Min: 45.000000 Max 180.000000.
+Analyzing block type:                      DAMPENING: float32: Min: 0.050000 Max 0.050000.
+Analyzing block type:                          A_SHL: int32: Min: 0 Max 0.
+Analyzing block type:                  UPGRADE1SLOT4: Unsure...
+Analyzing block type:                              Y: int32: Min: 0 Max 0.
+Analyzing block type:                          TIGMX: Unsure...
+Analyzing block type:                   WEAPONPOINT1: Unsure...
+Analyzing block type:                          DRAGE: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                    WEAPONNAME1: Unsure...
+Analyzing block type:                           RKBP: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                         SPINTS: int32: Min: 0 Max 0.
+Analyzing block type:                    BACKYAWAXIS: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:              USEGROUNDTRACKING: Unsure...
+Analyzing block type:                 ACTORQUANTITY2: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                 RAPTOR_TURNLAG: float32: Min: 0.035000 Max 0.035000.
+Analyzing block type:                     PT_CAM3LAC: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                      TIPYAWMIN: float32: Min: -30.000000 Max -30.000000.
+Analyzing block type:           DEATHHELMACTIVESOUND: Unsure...
+Analyzing block type:                     TIPYAWAXIS: Byte: Min: 5 Max 5 (0x5 to 0x5).
+Analyzing block type:                     PT_CAM1ZPB: float32: Min: -2.000000 Max 0.000000.
+Analyzing block type:           STARTSOFFWITHWEAPON2: Unsure...
+Analyzing block type:                            F_T: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                     ELASTICITY: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:               NEARTIPPITCHCORR: int32: Min: 0 Max 0.
+Analyzing block type:               WARCLUBRANGEDIST: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                BOUNCEMAXSPEED2: int32: Min: 0 Max 0.
+Analyzing block type:                    PLANARRAMPX: int32: Min: 0 Max 0.
+Analyzing block type:                NEARTIPPITCHMAX: float32: Min: 20.000000 Max 30.000000.
+Analyzing block type:                     AXIALRAMPZ: int32: Min: 0 Max 0.
+Analyzing block type:     STERACOSAUR_MAXSTRAFESPEED: float32: Min: 5.000000 Max 11.000000.
+Analyzing block type:              NEARBASEPITCHAXIS: Byte: Min: 3 Max 4 (0x3 to 0x4).
+Analyzing block type:          MAXDARKMATTERCUBEAMMO: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                       BOOMTIME: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                         MPSFAR: float32: Min: 50.000000 Max 100.000000.
+Analyzing block type:                ACTOR_VARIABLES: Unsure...
+Analyzing block type:               ACTOR_PROPERTIES: Unsure...
+Analyzing block type:                   MAXXROTATION: float32: Min: 1.000000 Max 90.000000.
+Analyzing block type:                         MIRROR: Unsure...
+Analyzing block type:              NEARBASEPITCHCORR: float32: Min: -7.500000 Max 0.000000.
+Analyzing block type:                   NEARBASEZFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                  DROPPEDSOUND2: Unsure...
+Analyzing block type:                    WEAPONNAME5: Unsure...
+Analyzing block type:                  AMMOUPG2SLOT2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         HEALTH: Unsure...
+Analyzing block type:                  BASEPITCHCORR: float32: Min: -20.000000 Max -11.000000.
+Analyzing block type:                       CUOCOVER: Unsure...
+Analyzing block type:                 NEARBASEYAWMAX: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:        LOGICINITIALCOVERCHANCE: Byte: Min: 0 Max 9 (0x0 to 0x9).
+Analyzing block type:                       SPINMAXX: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                     BASEYAWMAX: float32: Min: 180.000000 Max 180.000000.
+Analyzing block type:                         OFFUPT: float32: Min: 1.000000 Max 8.000000.
+Analyzing block type:                 HEADFLINCHBONE: Byte: Min: 5 Max 255 (0x5 to 0xFF).
+Analyzing block type:                       BASEZFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                      SPINMAXSY: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                       BACKYFIX: float32: Min: -90.000000 Max 180.000000.
+Analyzing block type:                       COUNTERS: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                       BASEYFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                AMMOPERCLIPBASE: Byte: Min: 1 Max 60 (0x1 to 0x3C).
+Analyzing block type:                    EWALTCHANCE: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:                ENEMYTURRETTYPE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                   ACTORCHANCE2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   WEAPONRANGE1: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:              PREFERREDWEAPON10: Byte: Min: 2 Max 2 (0x2 to 0x2).
+Analyzing block type:                  BASEPITCHAXIS: Byte: Min: 3 Max 4 (0x3 to 0x4).
+Analyzing block type:                        TIPYFIX: int32: Min: 0 Max 0.
+Analyzing block type:                       BACKXFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                  LONGRANGEDIST: float32: Min: 25.000000 Max 999.000000.
+Analyzing block type:                       BOUNCENK: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                       INERTIAY: int32: Min: 0 Max 0.
+Analyzing block type:                  BASEBONEINDEX: Byte: Min: 25 Max 255 (0x19 to 0xFF).
+Analyzing block type:                     ACTOR_MESH: Unsure...
+Analyzing block type:                       EWMODVEL: Unsure...
+Analyzing block type:                USETAILTRACKING: Unsure...
+Analyzing block type:                  MAXTEKBOWAMMO: Byte: Min: 0 Max 20 (0x0 to 0x14).
+Analyzing block type:                       GDGASMED: Unsure...
+Analyzing block type:                  UPGRADE1SLOT3: Unsure...
+Analyzing block type:                  PT_FRFGUPAMNT: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                   NEARBASEYFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                   BACKPITCHMAX: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                       BACKZFIX: float32: Min: -90.000000 Max 90.000000.
+Analyzing block type:                           COLS: Unsure...
+Analyzing block type:                         W_XLAY: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                   TIPPITCHAXIS: Byte: Min: 3 Max 3 (0x3 to 0x3).
+Analyzing block type:                    AXIALFIELDZ: int32: Min: 0 Max 0.
+Analyzing block type:                          STAMN: float32: Min: 0.000000 Max 0.080000.
+Analyzing block type:               PREFERREDPICKUP2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     HEADYAWMAX: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                       DMIMNAME: Unsure...
+Analyzing block type:                   HEADPITCHMAX: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                     POINTFIELD: int32: Min: 0 Max 0.
+Analyzing block type:                        CHEVADE: Unsure...
+Analyzing block type:                        SYANGLE: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:                  CIRCULARRAMPY: int32: Min: 0 Max 0.
+Analyzing block type:             CROUCHATTACKCHANCE: Byte: Min: 0 Max 50 (0x0 to 0x32).
+Analyzing block type:                  NEARTIPYAWMAX: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                          AD_TI: Unsure...
+Analyzing block type:                  EWSECMINFIRES: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                MEDIUMRANGEDIST: float32: Min: 8.000000 Max 55.000000.
+Analyzing block type:               CLOSERANGECHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:              MAXCROUCHRUNSPEED: float32: Min: 3.000000 Max 8.000000.
+Analyzing block type:                          TIGMY: Unsure...
+Analyzing block type:                   WEAPONRANGE4: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:              SLOWMOVEMENTSPEED: float32: Min: 1.000000 Max 5.000000.
+Analyzing block type:                        SPINAZF: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                          W_THF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                    WEAPONNAME4: Unsure...
+Analyzing block type:                       DROWNSND: Unsure...
+Analyzing block type:                        SAGMASS: int32: Min: 0 Max 0.
+Analyzing block type:              NEARBASEBONEINDEX: Byte: Min: 26 Max 255 (0x1A to 0xFF).
+Analyzing block type:                    WEAPONNAME2: Unsure...
+Analyzing block type:                         RSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                            NLP: Unsure...
+Analyzing block type:                  CRITSURRENDER: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                         ACTOR1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          ACTOR: Unsure...
+Analyzing block type:                  POSITIONZBASE: float32: Min: -1.500000 Max 0.000000.
+Analyzing block type:                 STANDDOWNSTATE: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  STARTGASSOUND: Unsure...
+Analyzing block type:                    CRITRETREAT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:          RAPTOR_MAXSTRAFESPEED: float32: Min: 11.000000 Max 11.000000.
+Analyzing block type:             PAINPOISONGROANSND: Unsure...
+Analyzing block type:                       CUCCOVER: Unsure...
+Analyzing block type:                       PATHRAMP: int32: Min: 0 Max 0.
+Analyzing block type:                       CRITFLEE: Byte: Min: 0 Max 10 (0x0 to 0xA).
+Analyzing block type:                   CRITNOCHANGE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                   WEAPONPOINT3: Unsure...
+Analyzing block type:                   EWRELOADTIME: float32: Min: 0.500000 Max 5.000000.
+Analyzing block type:                      CRITCOVER: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         SMSTEP: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:             CRITICALTHRESHHOLD: float32: Min: -1.000000 Max 50.000000.
+Analyzing block type:                     DMEXACTRAD: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                 ACTOR_DESTRUCT: Unsure...
+Analyzing block type:              SLOWSWIMMINGSPEED: float32: Min: 1.000000 Max 3.000000.
+Analyzing block type:                 NEARBASEYAWMIN: float32: Min: -30.000000 Max -30.000000.
+Analyzing block type:                     POINTVALUE: float32: Min: 0.000000 Max 5.000000.
+Analyzing block type:              FEARFULTHRESHHOLD: float32: Min: -1.000000 Max -1.000000.
+Analyzing block type:                           SKTY: int32: Min: 0 Max 0.
+Analyzing block type:                ATTACKRESETTIME: float32: Min: -1.000000 Max 15.000000.
+Analyzing block type:                     DMIMDAMRAD: float32: Min: 15.000000 Max 15.000000.
+Analyzing block type:                         PSMPOS: float32: Min: -10.000000 Max 40.000000.
+Analyzing block type:               LOGICCOVERCHANCE: Byte: Min: 0 Max 9 (0x0 to 0x9).
+Analyzing block type:                          AD_RT: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                     WANTSCOVER: Unsure...
+Analyzing block type:                     EWHOLDDOWN: Unsure...
+Analyzing block type:                   BASEPITCHMIN: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                      PATHFIELD: int32: Min: 0 Max 0.
+Analyzing block type:                 ACCESSORYNAME3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   LINEARFIELDY: int32: Min: 0 Max 0.
+Analyzing block type:                  MINCOVERSHOTS: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                   DROPPEDSOUND: Unsure...
+Analyzing block type:                 CLIMBENDHEIGHT: float32: Min: 1.000000 Max 1.850000.
+Analyzing block type:                 XROTATIONSPEED: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:              HORZCLIMBINGSPEED: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                       SPINMAXZ: float32: Min: 0.000000 Max 20.000000.
+Analyzing block type:                    HEADYAWAXIS: Byte: Min: 3 Max 5 (0x3 to 0x5).
+Analyzing block type:                      ALWAYSRUN: Unsure...
+Analyzing block type:                         DANCES: Unsure...
+Analyzing block type:                       CANCLIMB: Unsure...
+Analyzing block type:                  RAGELOOPSOUND: Unsure...
+Analyzing block type:                          A_SHH: int32: Min: 0 Max 0.
+Analyzing block type:                 CLOSERANGEDIST: float32: Min: 1.000000 Max 200.000000.
+Analyzing block type:                   PT_CAM3CROLL: float32: Min: 0.150000 Max 0.250000.
+Analyzing block type:                           DPOW: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:    BULLET_BIRDMISSILE_VELOCITY: float32: Min: 200.000000 Max 200.000000.
+Analyzing block type:                   INITIALALERT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  REGIONTARGETS: Unsure...
+Analyzing block type:                  UPGRADE2SLOT0: Unsure...
+Analyzing block type:                   TIPBONEINDEX: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                  MOVEMENTSPEED: float32: Min: 1.500000 Max 41.000000.
+Analyzing block type:                        GIBPART: Unsure...
+Analyzing block type:                   IGNOREPLAYER: Unsure...
+Analyzing block type:                 COVER_MAXRANGE: float32: Min: 9999.000000 Max 9999.000000.
+Analyzing block type:                     BACKPYCORR: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                      DROPSOUND: Unsure...
+Analyzing block type:                    USEPRIMARY2: Unsure...
+Analyzing block type:                 SECONDARYSOUND: Unsure...
+Analyzing block type:                       SPINMINY: int32: Min: 0 Max 0.
+Analyzing block type:                      VISCOSITY: float32: Min: 0.010000 Max 0.010000.
+Analyzing block type:                 EWSECFLASHNAME: Unsure...
+Analyzing block type:                  EWSECPARTNAME: Unsure...
+Analyzing block type:                           TRNS: Unsure...
+Analyzing block type:                         FSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                       SNIPEFOV: float32: Min: 18.000000 Max 18.000000.
+Analyzing block type:                   RESETWHENDIE: Unsure...
+Analyzing block type:                    USEPRIMARY3: Unsure...
+Analyzing block type:                     EWMAXFIRES: Byte: Min: 1 Max 12 (0x1 to 0xC).
+Analyzing block type:                       ISRAPTOR: Unsure...
+Analyzing block type:                       BOUNCENP: int32: Min: 0 Max 0.
+Analyzing block type:                   LINEARFIELDX: int32: Min: 0 Max 0.
+Analyzing block type:                     AXIALRAMPX: int32: Min: 0 Max 0.
+Analyzing block type:                     EWMINFIRES: Byte: Min: 1 Max 7 (0x1 to 0x7).
+Analyzing block type:                           RKBY: int32: Min: 0 Max 0.
+Analyzing block type:                    STEPOUT_DIR: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                   PRIMARYSOUND: Unsure...
+Analyzing block type:                CROUCHEYEHEIGHT: float32: Min: 0.400000 Max 1.200000.
+Analyzing block type:                   TURNINGSPEED: float32: Min: 20.000000 Max 720.000000.
+Analyzing block type:                   WEAPONPOINT4: Unsure...
+Analyzing block type:                    SIGHTRADIUS: float32: Min: 0.000000 Max 3000.000000.
+Analyzing block type:                     PATHINRAMP: int32: Min: 0 Max 0.
+Analyzing block type:                       GIBDEATH: Unsure...
+Analyzing block type:                  HEADBONEINDEX: Byte: Min: 5 Max 255 (0x5 to 0xFF).
+Analyzing block type:                  AMMOUPG2SLOT3: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                    EWFLASHNAME: Unsure...
+Analyzing block type:                     PT_CAMLLAL: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                  EWALTPARTNAME: Unsure...
+Analyzing block type:                         SPINTI: int32: Min: 0 Max 0.
+Analyzing block type:                   LINEAREFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     COVER_TYPE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:        AMMOUSEDPERSHOTUPGRADE2: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                     DANCESPEED: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                   NEARBASEXFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                           SPGF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                        SAGTYPE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                           MASS: float32: Min: -1.000000 Max 500000.000000.
+Analyzing block type:                     EWPARTNAME: Unsure...
+Analyzing block type:                           W_FC: float32: Min: 0.000000 Max 0.000000.
+Analyzing block type:                 COVER_MINRANGE: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                     LINK_LISTS: Unsure...
+Analyzing block type:                    MARKER_TYPE: Byte: Min: 0 Max 6 (0x0 to 0x6).
+Analyzing block type:                  FLAREPARTICLE: Unsure...
+Analyzing block type:              LOGICATTACKCHANCE: Byte: Min: 0 Max 10 (0x0 to 0xA).
+Analyzing block type:                      CRITPRONE: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                       PSMDECEL: float32: Min: 0.150000 Max 0.150000.
+Analyzing block type:              SPAWNACTOR2CHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:                ACCESSORYPOINT3: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                 ACCESSORYNAME1: Unsure...
+Analyzing block type:                      ALARMTIME: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                   WEAPONRANGE2: float32: Min: 0.000000 Max 40.000000.
+Analyzing block type:                ACCESSORYPOINT1: Unsure...
+Analyzing block type:                  SHIELDONSOUND: Unsure...
+Analyzing block type:                    BASEYAWAXIS: Byte: Min: 3 Max 5 (0x3 to 0x5).
+Analyzing block type:                     CONEVISION: Unsure...
+Analyzing block type:                     HASPTARGET: Unsure...
+Analyzing block type:                         MPSSCA: float32: Min: 5.000000 Max 10.000000.
+Analyzing block type:              MEDIUMRANGECHANCE: Byte: Min: 0 Max 90 (0x0 to 0x5A).
+Analyzing block type:                     LIGHTCOLOR: Unsure...
+Analyzing block type:                    TIPPITCHMIN: float32: Min: -30.000000 Max -30.000000.
+Analyzing block type:                         MPSNEA: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                           AU_D: float32: Min: -1.000000 Max 1000.000000.
+Analyzing block type:                   BASEPITCHMAX: float32: Min: 90.000000 Max 90.000000.
+Analyzing block type:                           W_BA: int32: Min: 0 Max 0.
+Analyzing block type:                   GAMINNUMBERS: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                          MODES: Unsure...
+Analyzing block type:                           XFOV: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:                    PLANARRAMPZ: int32: Min: 0 Max 0.
+Analyzing block type:                  SPAWNINTERVAL: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                          W_DSX: int32: Min: 0 Max 0.
+Analyzing block type:                    INITIALMODE: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                       BOUNCEY2: int32: Min: 0 Max 0.
+Analyzing block type:                  HEADPITCHCORR: float32: Min: 0.000000 Max 30.000000.
+Analyzing block type:              FASTSWIMMINGSPEED: float32: Min: 2.000000 Max 5.000000.
+Analyzing block type:                        SPINSTX: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:                        BOUNCEY: float32: Min: 0.000000 Max 25.000000.
+Analyzing block type:                            C_B: float32: Min: 5000.000000 Max 5000.000000.
+Analyzing block type:                           SMJD: int32: Min: 0 Max 0.
+Analyzing block type:                BOUNCEMAXSPEEDX: int32: Min: 0 Max 0.
+Analyzing block type:                       MPSONOFF: Unsure...
+Analyzing block type:                       COLLIDES: Unsure...
+Analyzing block type:                    CLIMB_SPEED: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                            IPS: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                   PLANARFIELDZ: int32: Min: 0 Max 0.
+Analyzing block type:                  AMMOUPG2SLOT0: Unsure...
+Analyzing block type:                       AIRADIUS: float32: Min: 0.100000 Max 7.500000.
+Analyzing block type:           STARTSOFFWITHWEAPON4: Unsure...
+Analyzing block type:                     HASSTARGET: Unsure...
+Analyzing block type:                         A_FEXS: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                       ALERTAIS: Unsure...
+Analyzing block type:                        FALLOFF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                LONGRANGECHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:                          HOTPS: Unsure...
+Analyzing block type:                    PICKUPSOUND: Unsure...
+Analyzing block type:                BOUNCEMAXSPEEDY: int32: Min: 0 Max 0.
+Analyzing block type:                      MINDAMAGE: float32: Min: 0.000000 Max 10000.000000.
+Analyzing block type:                     BASEWOBBLE: float32: Min: 4.000000 Max 4.000000.
+Analyzing block type:                         STCLSN: Unsure...
+Analyzing block type:  LEVELEXITDESTINATIONLEVELNAME: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           DDIS: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:            SPAWNACTOR3VELOCITY: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                   PAINHEAVYSND: Unsure...
+Analyzing block type:               NEARBASEPITCHMAX: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:                     BACKYAWMIN: float32: Min: -180.000000 Max 0.000000.
+Analyzing block type:                  UPGRADE1SLOT6: Unsure...
+Analyzing block type:                      USEREGION: Unsure...
+Analyzing block type:                           DNUM: Byte: Min: 16 Max 16 (0x10 to 0x10).
+Analyzing block type:                          A_TDK: Unsure...
+Analyzing block type:               BOUNCEMAXSPEEDY2: int32: Min: 0 Max 0.
+Analyzing block type:             WATERSURFACEBADSND: Unsure...
+Analyzing block type:                     ISUPGRADE2: Unsure...
+Analyzing block type:              PRONEATTACKCHANCE: Byte: Min: 0 Max 50 (0x0 to 0x32).
+Analyzing block type:                          W_FSY: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                         WPTIME: float32: Min: -1.000000 Max -1.000000.
+Analyzing block type:                           DLIF: float32: Min: 2.000000 Max 10.000000.
+Analyzing block type:                         STTYPE: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:               BOUNCEMAXSPEEDX2: int32: Min: 0 Max 0.
+Analyzing block type:                       BOUNCEX2: int32: Min: 0 Max 0.
+Analyzing block type:                 BOUNCEADJUSTY2: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                 CELEBRATESOUND: Unsure...
+Analyzing block type:                DEADPLAYERACTOR: Unsure...
+Analyzing block type:                    NEARTIPYFIX: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                        GDBNAME: Unsure...
+Analyzing block type:                 DISEMBARKDELAY: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                      PT_FREDGR: float32: Min: 0.100000 Max 0.100000.
+Analyzing block type:                       GDTRNSPD: float32: Min: 240.000000 Max 240.000000.
+Analyzing block type:                    TUROKAITYPE: Byte: Min: 0 Max 6 (0x0 to 0x6).
+Analyzing block type:                         SAWMDT: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:                 BOUNCEMAXSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                           DCOL: Unsure...
+Analyzing block type:                          A_HII: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  BOUNCEADJUSTY: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                REGENERATESOUND: Unsure...
+Analyzing block type:                         SPINIY: float32: Min: 0.000000 Max 100.000000.
+Analyzing block type:                ACTOR_MESH_AXIS: Unsure...
+Analyzing block type:             SHALLOWWATERHEIGHT: float32: Min: 0.050000 Max 2.000000.
+Analyzing block type:                     TIPTORQUEX: float32: Min: 0.000000 Max 100.000000.
+Analyzing block type:                        BOUNCEZ: int32: Min: 0 Max 0.
+Analyzing block type:                         RDELAY: float32: Min: -1.000000 Max 20.000000.
+Analyzing block type:                     MAXBOWAMMO: Byte: Min: 0 Max 20 (0x0 to 0x14).
+Analyzing block type:                          GDPDN: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                       MAXTIPZ2: int32: Min: 0 Max 0.
+Analyzing block type:                  BOUNCEADJUSTZ: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:           USABLEUNDERWATERBASE: Unsure...
+Analyzing block type:                       TIPTIMEX: float32: Min: 0.000000 Max 128.000000.
+Analyzing block type:                   ACTORCHANCE1: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                EWSECRELOADTIME: float32: Min: 0.000000 Max 2.500000.
+Analyzing block type:                          GDPUP: float32: Min: 50.000000 Max 50.000000.
+Analyzing block type:                     BOUNCEKIND: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:               NEARBASEPITCHMIN: float32: Min: -20.000000 Max -20.000000.
+Analyzing block type:                   PLANARFIELDX: int32: Min: 0 Max 0.
+Analyzing block type:             WEAPONTYPEUPGRADE2: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                          AD_TY: Byte: Min: 0 Max 56 (0x0 to 0x38).
+Analyzing block type:                   INITIALSTATE: Unsure...
+Analyzing block type:                   SLIDESONPATH: Unsure...
+Analyzing block type:             PATHSLIDEWARPSBACK: Unsure...
+Analyzing block type:                       PATHPUSH: float32: Min: -1.000000 Max 0.000000.
+Analyzing block type:                           AHRD: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                   PATHFRICTION: int32: Min: 0 Max 0.
+Analyzing block type:                       RETURNED: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  FLYINGPERTURB: Byte: Min: 0 Max 3 (0x0 to 0x3).
+Analyzing block type:                       SPINMAXY: int32: Min: 0 Max 0.
+Analyzing block type:               NEARTIPBONEINDEX: Byte: Min: 27 Max 255 (0x1B to 0xFF).
+Analyzing block type:                     DISEMBARKS: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:        STERACOSAUR_MAXRUNSPEED: float32: Min: 9.000000 Max 14.000000.
+Analyzing block type:                    SOUNDRADIUS: float32: Min: 0.000000 Max 3000.000000.
+Analyzing block type:                      INVISIBLE: Unsure...
+Analyzing block type:                 EXPLOSIVEARROW: Unsure...
+Analyzing block type:                          AP_EC: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          SPINY: float32: Min: 0.000000 Max 3000.000000.
+Analyzing block type:                   PT_CAMLYLASW: float32: Min: 1.000000 Max 4.000000.
+Analyzing block type:                          AD_ED: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:                    EMBARKDELAY: float32: Min: 0.000000 Max 2.000000.
+Analyzing block type:                        TIPZFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                       PSMACCEL: float32: Min: 0.150000 Max 0.150000.
+Analyzing block type:                         TIPRDZ: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                        SPINAYL: int32: Min: 0 Max 0.
+Analyzing block type:                  HEADPITCHAXIS: Byte: Min: 2 Max 4 (0x2 to 0x4).
+Analyzing block type:                FALLINGSPLATSND: Unsure...
+Analyzing block type:                           HIDE: float32: Min: -1.000000 Max 0.000000.
+Analyzing block type:                           AU_F: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:              VERTCLIMBINGSPEED: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                       RECHARGE: int32: Min: 0 Max 0.
+Analyzing block type:                          V_MOV: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         TIPRTZ: float32: Min: 0.000000 Max 90.000000.
+Analyzing block type:                         HSTIME: int32: Min: 0 Max 0.
+Analyzing block type:                           R_TT: Unsure...
+Analyzing block type:                       SPOLNAME: Unsure...
+Analyzing block type:                    TIPPITCHMAX: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                       TIPTIMEZ: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                         W_SUHI: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  BOUNCEADJUSTX: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                           RKTP: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                 ACCESSORYNAME2: Unsure...
+Analyzing block type:                         GRND_Y: float32: Min: -12.469840 Max 0.389170.
+Analyzing block type:                        OFFSETY: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:            SPAWNACTOR4VELOCITY: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                       MAXTIPZ1: int32: Min: 0 Max 0.
+Analyzing block type:                          SAGRD: int32: Min: 0 Max 0.
+Analyzing block type:                      TIPYAWMAX: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                           W_SP: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                   PT_CAMLYEYSW: float32: Min: 1.000000 Max 4.000000.
+Analyzing block type:                        TIPDOMX: Unsure...
+Analyzing block type:                  AMMOUPG0SLOT2: Unsure...
+Analyzing block type:                          WTIME: float32: Min: -1.000000 Max -1.000000.
+Analyzing block type:                 BOUNCEADJUSTZ2: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                    NEARTIPXFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:                        DENSITY: float32: Min: 0.000000 Max 100.000000.
+Analyzing block type:                    LEASHRADIUS: float32: Min: 0.000000 Max 50.000000.
+Analyzing block type:           STERACOSAUR_DASHTIME: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                    BOUNCEKIND2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         PSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                  AMMOUPG0SLOT6: Unsure...
+Analyzing block type:                          A_SHW: int32: Min: 0 Max 0.
+Analyzing block type:                           DSTA: Unsure...
+Analyzing block type:                       MAXTIPX2: int32: Min: 0 Max 0.
+Analyzing block type:                       MAXTIPX1: float32: Min: 0.000000 Max 3.000000.
+Analyzing block type:                    COVERRADIUS: float32: Min: 40.000000 Max 60.000000.
+Analyzing block type:                       TIPTYPEX: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:               CANBEGRAVITYHELD: Unsure...
+Analyzing block type:                           DTYP: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                        SAGMINS: int32: Min: 0 Max 0.
+Analyzing block type:                           DSIZ: float32: Min: 5.000000 Max 5.000000.
+Analyzing block type:              PREFERREDWEAPON01: Byte: Min: 4 Max 4 (0x4 to 0x4).
+Analyzing block type:                       PT_ACDAM: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                      SPINMAXSZ: int32: Min: 0 Max 0.
+Analyzing block type:                 MAXSTRAFESPEED: float32: Min: 8.000000 Max 8.000000.
+Analyzing block type:                         STSCNT: float32: Min: 2.000000 Max 5.000000.
+Analyzing block type:                   PT_CAMLCROLL: float32: Min: 0.150000 Max 0.650000.
+Analyzing block type:                        SPINFTX: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:                  AMMOUPG0SLOT5: Unsure...
+Analyzing block type:        DAMAGELOGICCHANGEAMOUNT: float32: Min: -1.000000 Max 1.000000.
+Analyzing block type:              PATHRELEASE1SPEED: float32: Min: -1.000000 Max 0.000000.
+Analyzing block type:                       BOUNCEES: Byte: Min: 0 Max 8 (0x0 to 0x8).
+Analyzing block type:        TWOHANDEDWEAPONUPGRADE2: Unsure...
+Analyzing block type:              ACTOR_MESH_BOUNDS: Unsure...
+Analyzing block type:                    USEPRIMARY4: Unsure...
+Analyzing block type:                      PT_WEAMSD: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                     BACKYAWMAX: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:                       TIPTYPEZ: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                        CANSWIM: Unsure...
+Analyzing block type:                     ISUPGRADE1: Unsure...
+Analyzing block type:           LOSTCONTACTRESETTIME: float32: Min: -1.000000 Max 15.000000.
+Analyzing block type:                         TIPRTX: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                          A_KSK: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                  EWSECMAXFIRES: Byte: Min: 1 Max 1 (0x1 to 0x1).
+Analyzing block type:                        SPINAZL: float32: Min: 0.000000 Max 45.000000.
+Analyzing block type:                          SAGRT: float32: Min: 0.000000 Max 1.500000.
+Analyzing block type:                    ALARMRADIUS: int32: Min: 0 Max 0.
+Analyzing block type:                         STADEF: Unsure...
+Analyzing block type:                        SAGTIME: float32: Min: 0.000000 Max 0.800000.
+Analyzing block type:                  CIRCULARRAMPZ: int32: Min: 0 Max 0.
+Analyzing block type:                   WEAPONRANGE3: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:                         MAXSAG: float32: Min: 0.000000 Max 0.300000.
+Analyzing block type:     USABLEWHENCLIMBINGUPGRADE1: Unsure...
+Analyzing block type:                     ALERTSTATE: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:              SPAWNSFOLLOWSPATH: Unsure...
+Analyzing block type:                 MINASSAULTDIST: float32: Min: 6.000000 Max 6.000000.
+Analyzing block type:                         SPINAZ: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:                       SPINMINZ: float32: Min: 0.000000 Max 20.000000.
+Analyzing block type:                     PATHEFFECT: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           TERR: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:                        SPINAZT: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:            AMMOPERCLIPUPGRADE1: Byte: Min: 5 Max 15 (0x5 to 0xF).
+Analyzing block type:                      MAXHEALTH: Unsure...
+Analyzing block type:                NEARBASEYAWAXIS: Byte: Min: 3 Max 5 (0x3 to 0x5).
+Analyzing block type:                        SPINAXL: float32: Min: 0.000000 Max 45.000000.
+Analyzing block type:                    WEAPONNAME3: Unsure...
+Analyzing block type:                           SMJH: int32: Min: 0 Max 0.
+Analyzing block type:                        SPINAXT: Byte: Min: 0 Max 2 (0x0 to 0x2).
+Analyzing block type:                         VSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                         STFRAD: int32: Min: 0 Max 0.
+Analyzing block type:           STARTSOFFWITHWEAPON7: Unsure...
+Analyzing block type:                   TIPPITCHCORR: int32: Min: 0 Max 0.
+Analyzing block type:                        SPINFTZ: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:              CINEMATICPRIORITY: Unsure...
+Analyzing block type:                   WEAPONPOINT5: Unsure...
+Analyzing block type:        MUZZLERIDINGYFACTORBASE: float32: Min: 0.000000 Max 0.100000.
+Analyzing block type:                   CANDISMEMBER: Unsure...
+Analyzing block type:                ACTIVESPAWNSPS2: Byte: Min: 255 Max 255 (0xFF to 0xFF).
+Analyzing block type:                        IGNORES: Unsure...
+Analyzing block type:                        SPINCEY: int32: Min: 0 Max 0.
+Analyzing block type:                         LSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                        SPINSTY: float32: Min: 0.000000 Max 300.000000.
+Analyzing block type:                    AXIALFIELDX: int32: Min: 0 Max 0.
+Analyzing block type:                          AD_DK: Byte: Min: 0 Max 9 (0x0 to 0x9).
+Analyzing block type:                 BOUNCEADJUSTX2: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:     USABLEWHENCLIMBINGUPGRADE2: Unsure...
+Analyzing block type:                  PT_CAMLYLAOFF: float32: Min: 4.000000 Max 4.000000.
+Analyzing block type:                         A_SOFF: Unsure...
+Analyzing block type:                       PT_LPWAV: float32: Min: 45.000000 Max 55.000000.
+Analyzing block type:                      SPINMAXSX: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:               LEDGESHIMMYSPEED: float32: Min: 0.250000 Max 0.250000.
+Analyzing block type:                  MAXCOVERSHOTS: Byte: Min: 1 Max 5 (0x1 to 0x5).
+Analyzing block type:                 SHIELDOFFSOUND: Unsure...
+Analyzing block type:                  PATHENDBOUNCE: int32: Min: 0 Max 0.
+Analyzing block type:                       SXZANGLE: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:                          SPINZ: int32: Min: 0 Max 0.
+Analyzing block type:               SPAWNINTERVALPS2: float32: Min: 10.000000 Max 10.000000.
+Analyzing block type:                  AMMOUPG0SLOT0: Unsure...
+Analyzing block type:                    AIMATHEIGHT: float32: Min: -5.000000 Max 3.500000.
+Analyzing block type:                LEVELEXITHEIGHT: float32: Min: 2.000000 Max 2.000000.
+Analyzing block type:                          SPINX: int32: Min: 0 Max 0.
+Analyzing block type:                  UPGRADE2SLOT7: Unsure...
+Analyzing block type:                         STFBNC: float32: Min: 0.000000 Max 0.250000.
+Analyzing block type:                  AMMOUPG1SLOT2: Unsure...
+Analyzing block type:                    DESCRIPTION: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     PITCHSPEED: float32: Min: 10.000000 Max 180.000000.
+Analyzing block type:                      TURNSPEED: float32: Min: 240.000000 Max 240.000000.
+Analyzing block type:                   WEAPONRANGE5: float32: Min: 0.000000 Max 40.000000.
+Analyzing block type:                       INERTIAZ: int32: Min: 0 Max 0.
+Analyzing block type:                         SMFALL: int32: Min: 0 Max 0.
+Analyzing block type:                 GRAVITYFACTORZ: float32: Min: 1.000000 Max 1.000000.
+Analyzing block type:                  AMMOUPG1SLOT5: Unsure...
+Analyzing block type:                   ACTORCHANCE0: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                          A_KSF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     PT_CAM1YPB: float32: Min: 1.000000 Max 1.500000.
+Analyzing block type:                         W_SUHF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          A_SON: Unsure...
+Analyzing block type:              SPAWNACTOR5CHANCE: Byte: Min: 0 Max 100 (0x0 to 0x64).
+Analyzing block type:               NEARTIPPITCHAXIS: Byte: Min: 3 Max 4 (0x3 to 0x4).
+Analyzing block type:                          DMASS: float32: Min: 30.000000 Max 30.000000.
+Analyzing block type:                         SMWALL: float32: Min: 0.000000 Max 3.000000.
+Analyzing block type:                  AMMOUPG1SLOT1: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                         BSPEED: int32: Min: 0 Max 0.
+Analyzing block type:                  AMMOUPG1SLOT3: Byte: Min: 0 Max 5 (0x0 to 0x5).
+Analyzing block type:                        SPINFTY: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:                      RIGIDBODY: Unsure...
+Analyzing block type:                           INTE: int32: Min: 0 Max 0.
+Analyzing block type:                        DUMMIES: Unsure...
+Analyzing block type:                         STSSPD: float32: Min: 0.200000 Max 1.500000.
+Analyzing block type:                         SPINIX: float32: Min: 0.000000 Max 200.000000.
+Analyzing block type:                   PT_CAMLCHLAG: Byte: Min: 10 Max 10 (0xA to 0xA).
+Analyzing block type:    MUZZLERIDINGYFACTORUPGRADE1: float32: Min: 0.100000 Max 0.100000.
+Analyzing block type:                       BOUNCEZ2: int32: Min: 0 Max 0.
+Analyzing block type:                       FRICTION: float32: Min: 0.000000 Max 10.000000.
+Analyzing block type:                  BACKPITCHAXIS: Byte: Min: 2 Max 4 (0x2 to 0x4).
+Analyzing block type:                         A_FENM: float32: Min: 0.000000 Max 1.000000.
+Analyzing block type:                        TOUCHES: Unsure...
+Analyzing block type:                          AP_DC: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                           HOLD: float32: Min: -1.000000 Max 0.000000.
+Analyzing block type:                           A_MT: Unsure...
+Analyzing block type:                           SNA2: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                   CRITKAMIKAZE: Byte: Min: 0 Max 90 (0x0 to 0x5A).
+Analyzing block type:                    PT_WEAMSDMG: float32: Min: 100.000000 Max 100.000000.
+Analyzing block type:                        SPINCEZ: float32: Min: 0.000000 Max 5.000000.
+Analyzing block type:                           A_KS: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                NEARTIPPITCHMIN: float32: Min: -30.000000 Max -20.000000.
+Analyzing block type:                           AU_A: float32: Min: 0.000000 Max 45.000000.
+Analyzing block type:                        LEASHED: Unsure...
+Analyzing block type:                          AD_TD: float32: Min: 0.000000 Max 1000.000000.
+Analyzing block type:                            RZR: float32: Min: 3.000000 Max 3.000000.
+Analyzing block type:                            IST: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                      JMPLNDSND: Unsure...
+Analyzing block type:                          A_RNF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          A_HIF: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                          A_ALP: float32: Min: 0.500000 Max 1.000000.
+Analyzing block type:                          A_NDD: float32: Min: -1.000000 Max 1000.000000.
+Analyzing block type:               BOUNCEMAXSPEEDZ2: int32: Min: 0 Max 0.
+Analyzing block type:                  AMMOUPG1SLOT7: Unsure...
+Analyzing block type:                        VERSION: float32: Min: 0.000000 Max 1.250000.
+Analyzing block type:                     PT_CAMLFOV: float32: Min: 60.000000 Max 60.000000.
+Analyzing block type:                   HEADPITCHMIN: float32: Min: -90.000000 Max 0.000000.
+Analyzing block type:                BOUNCEMAXSPEEDZ: int32: Min: 0 Max 0.
+Analyzing block type:                           A_GN: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                         SPINAX: float32: Min: 0.000000 Max 180.000000.
+Analyzing block type:                    NEARTIPZFIX: float32: Min: -90.000000 Max -90.000000.
+Analyzing block type:              POSITIONYUPGRADE1: int32: Min: 0 Max 0.
+Analyzing block type:                        GRAVITY: float32: Min: 0.000000 Max 5.000000.
+Analyzing block type:                     NGFIRENAME: Unsure...
+Analyzing block type:                         STDFAN: int32: Min: 0 Max 0.
+Analyzing block type:                      SCALEBASE: float32: Min: 1.000000 Max 3.000000.
+Analyzing block type:               BOUNCERELATIVETO: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:               PREFERREDPICKUP5: Byte: Min: 0 Max 0 (0x0 to 0x0).
+Analyzing block type:                     PT_FRSDACC: float32: Min: 1.000000 Max 2.000000.
+Analyzing block type:                          A_MDD: float32: Min: -1.000000 Max 1000.000000.
+Analyzing block type:                   STANDDOWNAIS: Unsure...
+Analyzing block type:                        EMBARKS: Byte: Min: 0 Max 1 (0x0 to 0x1).
+Analyzing block type:                           ESZR: float32: Min: 20.000000 Max 20.000000.
+Analyzing block type:          STERACOSAUR_TURNSPEED: float32: Min: 60.000000 Max 120.000000.
+Analyzing block type:                   COVER_RADIUS: float32: Min: 0.000000 Max 4.000000.
+Analyzing block type:                       SPINMINX: float32: Min: 0.000000 Max 100.000000.
+Analyzing block type:                           TYPE: Unsure...
+Analyzing block type:                          A_SHS: int32: Min: 0 Max 0.
+Analyzing block type:                   DEATHLONGSND: Unsure...
+Analyzing block type:                           DEFT: Unsure...

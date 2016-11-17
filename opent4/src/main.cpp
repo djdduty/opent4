@@ -1,14 +1,20 @@
+#include <vector>
+#include <string>
+
 #include <osg/Node>
 #include <osg/Group>
 #include <osg/Geode>
 #include <osg/Geometry>
 #include <osg/Texture2D>
-#include <osgDB/ReadFile> 
+#include <osg/PolygonMode>
+#include <osgDB/ReadFile>
 #include <osgViewer/Viewer>
 #include <osg/PositionAttitudeTransform>
 #include <osgGA/TrackballManipulator>
 
 #include <osgViewer/ViewerEventHandlers>
+
+#include "loader/Turok4.h"
 
 osgViewer::Viewer* SetupViewer() {
     osgViewer::Viewer* viewer = new osgViewer::Viewer;
@@ -38,148 +44,158 @@ osgViewer::Viewer* SetupViewer() {
     return viewer;
 }
 
-int main()
+
+osgViewer::Viewer* viewer;
+osg::Group* root;
+opent4::ATRFile* atr;
+
+//std::vector<std::vector<osg::Geode*>> ActorMeshes;
+//std::vector<std::string> ActorFiles;
+void TurokToOsg(opent4::Actor* actor)
 {
-    osgViewer::Viewer* viewer = SetupViewer();
+    std::string fn = actor->GetFilename();
+    opent4::ActorMesh* m = actor->GetMesh();
+    if(!m) return;
+    printf("Has mesh! %d submeshes\n", m->GetSubMeshCount());
 
-    osg::Group* root = new osg::Group();
-    osg::Geode* pyramidGeode = new osg::Geode();
-    osg::Geometry* pyramidGeometry = new osg::Geometry();
+    /*int ActorIdx = -1;
+    if(actor->GetDef())
+    {
+        for(size_t i = 0; i < ActorFiles.size(); i++)
+        {
+            if(ActorFiles[i].length() != fn.length()) continue;
+            if(ACtorFiles[i] != fn) continue;
+            ActorIdx = i;
+            break;
+        }
+    }*/
 
-    //Associate the pyramid geometry with the pyramid geode
-    //   Add the pyramid geode to the root node of the scene graph.
+    for(size_t i = 0; i < m->GetSubMeshCount(); i++)
+    {
+        std::string texFileName;
+        if(i < m->m_MeshInfos.size())
+        {
+            if(m->m_MeshInfos[i].TSNR_ID != -1)
+            {
+                int TexID = m->m_TXSTs[m->m_TSNRs[m->m_MeshInfos[i].TSNR_ID].TXST_ID].TextureID;
+                if(TexID < m->m_Textures.size()) texFileName = m->m_Textures[TexID];
+            }
+        }
 
-    pyramidGeode->addDrawable(pyramidGeometry);
-    root->addChild(pyramidGeode);
+        opent4::SubMesh* sm = m->GetSubMesh(i);
+        if(sm->GetVertexCount() != 0)
+        {
+            osg::Vec3Array* meshVerts = new osg::Vec3Array;
+            osg::Vec3Array* meshNorms = new osg::Vec3Array;
+            osg::Vec4Array* meshColors = new osg::Vec4Array;
+            osg::Vec2Array* meshTexCs = new osg::Vec2Array;
+            osg::DrawElementsUInt* meshIndices = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLE_STRIP, 0);
 
-    //Declare an array of vertices. Each vertex will be represented by
-    //a triple -- an instances of the vec3 class. An instance of
-    //osg::Vec3Array can be used to store these triples. Since
-    //osg::Vec3Array is derived from the STL vector class, we can use the
-    //push_back method to add array elements. Push back adds elements to
-    //the end of the vector, thus the index of first element entered is
-    //zero, the second entries index is 1, etc.
-    //Using a right-handed coordinate system with 'z' up, array
-    //elements zero..four below represent the 5 points required to create
-    //a simple pyramid.
+            for(size_t vIdx = 0; vIdx < sm->GetVertexCount(); vIdx++)
+            {
+                opent4::ActorVec3 v0, n0;
+                osg::Vec2 t0;
+                sm->GetTexCoord(vIdx, &t0._v[0]);
+                sm->GetVertex(vIdx,&v0.x);
+                sm->GetNormal(vIdx,&n0.x);
 
-    osg::Vec3Array* pyramidVertices = new osg::Vec3Array;
-    pyramidVertices->push_back( osg::Vec3( 0, 0, 0) ); // front left
-    pyramidVertices->push_back( osg::Vec3(10, 0, 0) ); // front right
-    pyramidVertices->push_back( osg::Vec3(10,10, 0) ); // back right
-    pyramidVertices->push_back( osg::Vec3( 0,10, 0) ); // back left
-    pyramidVertices->push_back( osg::Vec3( 5, 5,10) ); // peak
+                meshTexCs->push_back(t0);
+                meshVerts->push_back(osg::Vec3(v0.x,v0.z,v0.y));
+                meshNorms->push_back(osg::Vec3(n0.x,n0.z,n0.y));
+                meshColors->push_back(osg::Vec4(1,1,1,1));
+            }
 
-    //Associate this set of vertices with the geometry associated with the
-    //geode we added to the scene.
+            if(sm->GetIndexCount() != 0)
+            {
+                for(int idx = 0; idx < sm->GetIndexCount(); idx++)
+                {
+                    int i = sm->GetIndex(idx);
+                    meshIndices->push_back(i);
+                }
 
-    pyramidGeometry->setVertexArray( pyramidVertices );
+                osg::Geode* meshGeode = new osg::Geode();
+                osg::Geometry* meshGeometry = new osg::Geometry();
+                meshGeode->addDrawable(meshGeometry);
 
-    //Next, create a primitive set and add it to the pyramid geometry.
-    //Use the first four points of the pyramid to define the base using an
-    //instance of the DrawElementsUint class. Again this class is derived
-    //from the STL vector, so the push_back method will add elements in
-    //sequential order. To ensure proper backface cullling, vertices
-    //should be specified in counterclockwise order. The arguments for the
-    //constructor are the enumerated type for the primitive
-    //(same as the OpenGL primitive enumerated types), and the index in
-    //the vertex array to start from.
+                meshGeometry->setTexCoordArray(0, meshTexCs);
+                meshGeometry->setVertexArray(meshVerts);
+                meshGeometry->setNormalArray(meshNorms);
+                meshGeometry->setColorArray(meshColors);
+                meshGeometry->setColorBinding(osg::Geometry::BIND_PER_VERTEX);
+                meshGeometry->addPrimitiveSet(meshIndices);
+                printf("Adding geometry\n");
 
-    osg::DrawElementsUInt* pyramidBase =
-        new osg::DrawElementsUInt(osg::PrimitiveSet::QUADS, 0);
-    pyramidBase->push_back(3);
-    pyramidBase->push_back(2);
-    pyramidBase->push_back(1);
-    pyramidBase->push_back(0);
-    pyramidGeometry->addPrimitiveSet(pyramidBase);
+                //Setup obj transform
+                osg::Vec3 meshPosition;
+                if(actor->GetDef())
+                {
+                    opent4::ActorVec3 pos = actor->GetDef()->Position;
+                    meshPosition += osg::Vec3(pos.x, pos.z, pos.y);
+                }
+                osg::PositionAttitudeTransform* meshXForm = new osg::PositionAttitudeTransform();
 
-    //Repeat the same for each of the four sides. Again, vertices are
-    //specified in counter-clockwise order.
+                meshXForm->addChild(meshGeode);
+                root->addChild(meshXForm);
 
-    osg::DrawElementsUInt* pyramidFaceOne =
-        new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
-    pyramidFaceOne->push_back(0);
-    pyramidFaceOne->push_back(1);
-    pyramidFaceOne->push_back(4);
-    pyramidGeometry->addPrimitiveSet(pyramidFaceOne);
-
-    osg::DrawElementsUInt* pyramidFaceTwo =
-        new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
-    pyramidFaceTwo->push_back(1);
-    pyramidFaceTwo->push_back(2);
-    pyramidFaceTwo->push_back(4);
-    pyramidGeometry->addPrimitiveSet(pyramidFaceTwo);
-
-    osg::DrawElementsUInt* pyramidFaceThree =
-        new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
-    pyramidFaceThree->push_back(2);
-    pyramidFaceThree->push_back(3);
-    pyramidFaceThree->push_back(4);
-    pyramidGeometry->addPrimitiveSet(pyramidFaceThree);
-
-    osg::DrawElementsUInt* pyramidFaceFour =
-        new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
-    pyramidFaceFour->push_back(3);
-    pyramidFaceFour->push_back(0);
-    pyramidFaceFour->push_back(4);
-    pyramidGeometry->addPrimitiveSet(pyramidFaceFour);
-
-    //Declare and load an array of Vec4 elements to store colors.
-
-    osg::Vec4Array* colors = new osg::Vec4Array;
-    colors->push_back(osg::Vec4(1.0f, 0.0f, 0.0f, 1.0f) ); //index 0 red
-    colors->push_back(osg::Vec4(0.0f, 1.0f, 0.0f, 1.0f) ); //index 1 green
-    colors->push_back(osg::Vec4(0.0f, 0.0f, 1.0f, 1.0f) ); //index 2 blue
-    colors->push_back(osg::Vec4(1.0f, 1.0f, 1.0f, 1.0f) ); //index 3 white
-    colors->push_back(osg::Vec4(1.0f, 0.0f, 0.0f, 1.0f) ); //index 4 red
-
-    //The next step is to associate the array of colors with the geometry,
-    //assign the color indices created above to the geometry and set the
-    //binding mode to _PER_VERTEX.
-
-    pyramidGeometry->setColorArray(colors);
-    pyramidGeometry->setColorBinding(osg::Geometry::BIND_PER_VERTEX);
-
-    //Now that we have created a geometry node and added it to the scene
-    //we can reuse this geometry. For example, if we wanted to put a
-    //second pyramid 15 units to the right of the first one, we could add
-    //this geode as the child of a transform node in our scene graph.
-
-    // Declare and initialize a transform node.
-    for(int x = 0; x < 10; x++) {
-        for(int z = 0; z < 10; z++) {
-            if(x == 0 && z == 0) continue;
-            osg::PositionAttitudeTransform* pyramidXForm =
-                new osg::PositionAttitudeTransform();
-
-            // Use the 'addChild' method of the osg::Group class to
-            // add the transform as a child of the root node and the
-            // pyramid node as a child of the transform.
-
-            root->addChild(pyramidXForm);
-            pyramidXForm->addChild(pyramidGeode);
-
-            // Declare and initialize a Vec3 instance to change the
-            // position of the model in the scene
-
-            osg::Vec3 pyramidPosition(x*15,z*15,0);
-            pyramidXForm->setPosition( pyramidPosition );
+                if(texFileName.length() > 0)
+                {
+                    osg::Texture2D* meshTexture = new osg::Texture2D;
+                    meshTexture->setDataVariance(osg::Object::DYNAMIC);
+                    osg::Image* meshImage = osgDB::readImageFile(texFileName);
+                    if(!meshImage)
+                    {
+                        printf("OSG Failed loading image %s\n", texFileName.c_str());
+                    }
+                    meshTexture->setImage(meshImage);
+                    osg::StateSet* stateOne = new osg::StateSet();
+                    stateOne->setTextureAttributeAndModes(0, meshTexture, osg::StateAttribute::ON);
+                    meshGeode->setStateSet(stateOne);
+                }
+            }
         }
     }
+}
+
+
+
+void addSceneData()
+{
+    if(!root || !atr) return;
+
+    opent4::ATIFile* ATI = atr->GetActors();
+    std::vector<opent4::Actor*> ActorDefs;
+    ActorDefs.push_back(atr->GetActor());
+    if(ATI)
+    {
+        for(int i = 0; i < ATI->GetActorCount(); i++) ActorDefs.push_back(ATI->GetActorDef(i)->Actor->GetActor());
+    } else {
+        printf("Not a level ATR file.\n");
+    }
+
+    for(size_t i = 0; i < ActorDefs.size(); i++){
+        TurokToOsg(ActorDefs[i]);
+    }
+}
+
+void RunOsg()
+{
+    viewer = SetupViewer();
+    root = new osg::Group();
+    addSceneData();
 
     //Add stat handler
     osg::ref_ptr<osgViewer::StatsHandler> statsHandler = new osgViewer::StatsHandler;
     statsHandler->setKeyEventTogglesOnScreenStats(osgGA::GUIEventAdapter::KEY_F3);
     viewer->addEventHandler(statsHandler);
 
-    // switch off lighting as we haven't assigned any normals.
+    //Set state attributes
+    osg::PolygonMode * polygonMode = new osg::PolygonMode;
+    polygonMode->setMode( osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
+    //root->getOrCreateStateSet()->setAttributeAndModes(polygonMode,osg::StateAttribute::OVERRIDE|osg::StateAttribute::ON);
     root->getOrCreateStateSet()->setMode(GL_LIGHTING, osg::StateAttribute::OFF);
 
-    //The final step is to set up and enter a simulation loop.
-
+    //Setup viewer
     viewer->setSceneData( root );
-    //viewer.run();
-
     viewer->setCameraManipulator(new osgGA::TrackballManipulator());
     viewer->realize();
 
@@ -193,13 +209,24 @@ int main()
         simulationTime += dt;
 
         viewer->advance(simulationTime);
-        //frame(dt);
-        //viewer->frame();
         viewer->eventTraversal();
         viewer->updateTraversal();
         viewer->renderingTraversals();
     }
+}
 
+int main(int ArgC,const char* ArgV[])
+{
+    opent4::SetTurokDirectory("/home/djdduty/dev/projects/TUROK");
+    atr = new opent4::ATRFile();
+    if(!atr->Load("test.atr")) {
+        delete atr;
+        return -1;
+    }
+
+    RunOsg();
+    delete atr;
+    delete viewer;
     return 0;
 }
 
