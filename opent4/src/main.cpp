@@ -15,6 +15,7 @@
 #include <osgViewer/ViewerEventHandlers>
 
 #include "loader/Turok4.h"
+#include "imgui/osg_wrapper.h"
 
 osgViewer::Viewer* SetupViewer() {
     osgViewer::Viewer* viewer = new osgViewer::Viewer;
@@ -207,8 +208,6 @@ void TurokToOsg(opent4::Actor* actor)
     }
 }
 
-
-
 void addSceneData()
 {
     if(!root || !atr) return;
@@ -228,6 +227,19 @@ void addSceneData()
     }
 }
 
+void renderGui()
+{
+    ImGui::Text("Hello, world %d", 123);
+    if(ImGui::Button("Ok"))
+    {
+        // do stuff
+    }
+    char* buf;
+    float f;
+    ImGui::InputText("string", buf, 256);
+    ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
+}
+
 void RunOsg()
 {
     viewer = SetupViewer();
@@ -239,9 +251,13 @@ void RunOsg()
     statsHandler->setKeyEventTogglesOnScreenStats(osgGA::GUIEventAdapter::KEY_F3);
     viewer->addEventHandler(statsHandler);
 
+    //Gui handler
+    //osg::ref_ptr<opent4::ImGuiHandler> guiHandler = new opent4::ImGuiHandler((opent4::GuiCallback*)&renderGui);
+    //viewer->addEventHandler(guiHandler);
+
     //Set state attributes
-    osg::PolygonMode * polygonMode = new osg::PolygonMode;
-    polygonMode->setMode( osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
+    //osg::PolygonMode * polygonMode = new osg::PolygonMode;
+    //polygonMode->setMode( osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE);
     //root->getOrCreateStateSet()->setAttributeAndModes(polygonMode,osg::StateAttribute::OVERRIDE|osg::StateAttribute::ON);
     root->getOrCreateStateSet()->setMode(GL_LIGHTING, osg::StateAttribute::OFF);
 
@@ -268,7 +284,7 @@ void RunOsg()
 
 int main(int ArgC,const char* ArgV[])
 {
-    opent4::SetTurokDirectory("/home/djdduty/dev/projects/TUROK");
+    opent4::SetTurokDirectory("/home/djdduty/dev/projects/turok/");
     atr = new opent4::ATRFile();
     if(!atr->Load("test.atr")) {
         delete atr;

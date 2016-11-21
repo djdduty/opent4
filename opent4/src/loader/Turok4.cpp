@@ -120,7 +120,11 @@ namespace opent4
     std::string _tDir;
     void SetTurokDirectory(const std::string& TurokDir)
     {
+        //Insure there is no trailing slash in the turok dir
         _tDir = TurokDir;
+        while(_tDir.rbegin() != _tDir.rend() && *_tDir.rbegin() == '/')
+            _tDir.pop_back();
+
     }
 
     std::string GetTurokDirectory()
@@ -131,16 +135,23 @@ namespace opent4
     std::string TransformPseudoPathToRealPath(const std::string& PseudoPath)
     {
         std::string RealPath;
+
+        //Some hacky stuff to resolve various bugs with file paths
         if(PseudoPath[0] == 'Y' && PseudoPath[1] == ':') RealPath = PseudoPath.substr(2, PseudoPath.length() - 1);
+        else if(PseudoPath[0] == '/' && PseudoPath[1] == '\\') RealPath = PseudoPath.substr(1, PseudoPath.length() - 1);
         else RealPath = PseudoPath;
 
         RealPath = GetTurokDirectory() + RealPath;
+
         for(int s = 0; s < RealPath.length(); s++) {
             if(RealPath[s] == '\\')
                 RealPath[s] = '/';
             else
                 RealPath[s] = std::tolower(RealPath[s]);
         }
+
+        //printf("PseudoPath: %s\n", PseudoPath.c_str());
+        //printf("Realpath: %s\n", RealPath.c_str());
 
         size_t extIdx = RealPath.find_last_of(".");
         if(extIdx != std::string::npos)
